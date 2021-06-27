@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_large">
+
+        <LinearLayout
+            android:id="@+id/container"
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnMakeThePayment">
+
+            <LinearLayout style="@style/LinearLayoutHorizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_100"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_medium"
+                    android:src="@drawable/ic_payment_image_1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_100"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_medium"
+                    android:src="@drawable/ic_payment_image_2" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_100"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_medium"
+                    android:src="@drawable/ic_payment_image_3" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_100"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_medium"
+                    android:src="@drawable/ic_payment_image_4" />
+
+            </LinearLayout>
+
+            <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontal"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_medium">
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/padding_medium"
+                        android:text="@string/shopping_payment_payment_amount" />
+
+                    <TextView
+                        android:id="@+id/tvAmount"
+                        style="@style/TextViewBoldWrapContent"
+                        android:padding="@dimen/padding_medium"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <LinearLayout style="@style/LinearLayoutHorizontal">
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:padding="@dimen/padding_medium"
+                        android:text="@string/shopping_payment_card_number" />
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:text="(*)"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edtCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height_medium"
+                    android:background="@drawable/bg_edt_sign_in"
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/spinnerYear"
+                    android:padding="@dimen/padding_medium" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvErrorCardNum"
+                style="@style/TextViewError"
+                android:text="@string/text_required"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <LinearLayout style="@style/LinearLayoutHorizontal">
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:padding="@dimen/padding_medium"
+                        android:text="@string/shopping_payment_expiration_time" />
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:text="(*)"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHorizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerYear"
+                        style="@style/SpinnerShoppingCart" />
+
+                    <Spinner
+                        android:id="@+id/spinnerMonth"
+                        style="@style/SpinnerShoppingCart"
+                        android:layout_marginStart="@dimen/padding_medium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <LinearLayout style="@style/LinearLayoutHorizontal">
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:padding="@dimen/padding_medium"
+                        android:text="@string/shopping_payment_name_on_card" />
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:text="(*)"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edtNameCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height_medium"
+                    android:background="@drawable/bg_edt_sign_in"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/edtCVV"
+                    android:padding="@dimen/padding_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <LinearLayout style="@style/LinearLayoutHorizontal">
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:padding="@dimen/padding_medium"
+                        android:text="@string/shopping_payment_cvv" />
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:text="(*)"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontal"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/edtCVV"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/button_height_medium"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edt_sign_in"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_medium"
+                        android:textColor="@color/colorTextPrimary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_medium"
+                        android:layout_weight="2"
+                        android:text="@string/shopping_payment_cvv_note"
+                        android:textColor="@color/colorTextPrimary" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvErrorCvv"
+                    style="@style/TextViewError"
+                    android:text="@string/text_required"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMakeThePayment"
+            style="@style/AuthenticationButton"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_button_inactive"
+            android:text="@string/shopping_payment_confirm" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutHorizontal"
+    android:layout_width="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/btnView"
+        style="@style/LinearLayoutVertical"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_margin="@dimen/margin_medium"
+        android:padding="@dimen/padding_small">
+
+        <TextView
+            android:id="@+id/tvKey"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_small" />
+
+        <TextView
+            android:id="@+id/tvValue"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/padding_small"
+            android:textColor="@color/colorTextPrimary" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/dimen_1"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_gravity="center"
+        android:background="@color/colorRatioHint" />
+
+    <TextView
+        android:id="@+id/btnSeeAll"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_gravity="center"
+        android:textColor="@color/colorTextMore"
+        android:text="@string/book_detail_see_all"/>
+
+</LinearLayout>

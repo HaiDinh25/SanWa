@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:background="@drawable/bg_border_dialog"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/margin_larger"
+        android:layout_marginEnd="@dimen/margin_larger"
+        android:padding="@dimen/padding_large">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_thank_you" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextViewBoldWrapContent"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:padding="@dimen/padding_small"
+            android:text="@string/forgot_pass_thank_you_title" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:lineSpacingExtra="@dimen/margin_small"
+            android:padding="@dimen/padding_small"
+            android:text="@string/forgot_pass_thank_you_content" />
+
+        <Button
+            android:id="@+id/btnOK"
+            style="@style/AuthenticationButton"
+            android:layout_marginTop="@dimen/margin_larger"
+            android:background="@drawable/bg_button_red_background"
+            android:enabled="true"
+            android:text="OK" />
+
+    </LinearLayout>
+
+</layout>

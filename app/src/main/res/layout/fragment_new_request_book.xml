@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_large">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextViewNormalWrapContent"
+            android:text="@string/request_book_new_title" />
+
+        <LinearLayout
+            android:id="@+id/layoutTitle"
+            style="@style/LinearLayoutVertical"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:text="@string/request_book_new_book_name_title" />
+
+            <EditText
+                android:id="@+id/edtTitle"
+                style="@style/TextViewNormalWrapContent"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_edt_sign_in"
+                android:hint="@string/request_book_new_book_name_place_holder"
+                android:inputType="text"
+                android:maxLength="255"
+                android:maxLines="1"
+                android:nextFocusDown="@id/edtAuthor"
+                android:padding="@dimen/padding_medium"
+                android:textColorHint="@color/colorTextBlur"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAuthor"
+            style="@style/LinearLayoutVertical"
+            android:layout_below="@id/layoutTitle"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:text="@string/request_book_new_author_title" />
+
+            <EditText
+                android:id="@+id/edtAuthor"
+                style="@style/TextViewNormalWrapContent"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_edt_sign_in"
+                android:hint="@string/request_book_new_author_place_holder"
+                android:inputType="text"
+                android:maxLength="255"
+                android:maxLines="1"
+                android:nextFocusDown="@id/edtContent"
+                android:padding="@dimen/padding_medium"
+                android:textColorHint="@color/colorTextBlur"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            style="@style/LinearLayoutVertical"
+            android:layout_below="@id/layoutAuthor"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:text="@string/request_book_new_request_content_title" />
+
+                <ImageView
+                    android:id="@+id/btnImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_request_image" />
+
+                <ImageView
+                    android:id="@+id/btnCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_toStartOf="@id/btnImage"
+                    android:src="@drawable/ic_request_camera" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcImage"
+                style="@style/LinearLayoutHorizontal"
+                android:layout_marginTop="@dimen/margin_medium" />
+
+            <EditText
+                android:id="@+id/edtContent"
+                style="@style/TextViewNormalWrapContent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_edt_sign_in"
+                android:gravity="top"
+                android:hint="@string/request_book_new_request_content_place_holder"
+                android:imeOptions="actionDone"
+                android:lines="5"
+                android:maxLength="255"
+                android:padding="@dimen/padding_medium"
+                android:textColorHint="@color/colorTextBlur"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCount"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/layoutContent"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:hint="@string/request_book_text_view_count"
+            android:textColorHint="@color/colorTextBlur" />
+
+        <Button
+            android:id="@+id/btnSendRequest"
+            style="@style/AuthenticationButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/request_book_button_send_request" />
+
+    </RelativeLayout>
+
+</layout>

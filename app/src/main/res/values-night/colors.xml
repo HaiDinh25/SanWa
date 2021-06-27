@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#181A20</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#D42A1C</color>
+
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextBlur">#777777</color>
+    <color name="colorBorderSortTopSeller">#FFFFFF</color>
+    <color name="colorClickedAnim">#80000000</color>
+    <color name="colorHint">#777777</color>
+    <color name="colorIcon">#FFFFFF</color>
+    <color name="colorGrayInactive">#C3C3C3</color>
+    <color name="colorCircleTint">#0DBED2</color>
+    <color name="colorNavigationTint">#FFFFFF</color>
+    <color name="colorBorderButtonEmptyCart">#FFFFFF</color>
+    <color name="colorRatioHint">#A1CDC9C9</color>
+    <color name="colorNotAvailable">#FBE9E7</color>
+    <color name="colorStatusPendingApprove">#0DBED2</color>
+    <color name="colorSearchBorder">#FFFFFF</color>
+    <color name="colorSkeleton">#B1B0B0</color>
+
+    <color name="colorSigningBackground">#e69138</color>
+    <color name="colorFacebookBackGround">#597eaa</color>
+    <color name="colorGoogleBackGround">#ff3425</color>
+    <color name="colorLineBackGround">#6aa84f</color>
+    <color name="colorStatusBar">#181A20</color>
+
+</resources>

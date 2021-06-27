@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_large">
+
+        <TextView
+            style="@style/TextViewBoldWrapContent"
+            android:layout_width="@dimen/dimen_200"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/bg_skeleton_conner_small" />
+
+        <TextView
+            style="@style/TextViewNormalWrapContent"
+            android:layout_width="@dimen/dimen_150"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/bg_skeleton_conner_small" />
+
+        <TextView
+            style="@style/TextViewBoldWrapContent"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/bg_skeleton_conner_small" />
+
+        <TextView
+            style="@style/TextViewNormalWrapContent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/bg_skeleton_conner_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorSkeleton" />
+
+
+        <TextView
+            style="@style/TextViewBoldWrapContent"
+            android:layout_width="@dimen/dimen_200"
+            android:layout_marginTop="@dimen/margin_larger"
+            android:background="@drawable/bg_skeleton_conner_small" />
+
+        <RelativeLayout
+            style="@style/LinearLayoutHorizontal"
+            android:layout_marginTop="@dimen/margin_large">
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:layout_width="@dimen/dimen_150"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+            <ImageView
+                android:id="@+id/btnTerm"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTerm"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_small"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:background="@color/colorSkeleton" />
+
+        <RelativeLayout
+            style="@style/LinearLayoutHorizontal"
+            android:layout_marginTop="@dimen/margin_small">
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:layout_width="@dimen/dimen_150"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+            <ImageView
+                android:id="@+id/btnPrivacy"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvPrivacy"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_small" />
+
+
+    </LinearLayout>
+
+</layout>

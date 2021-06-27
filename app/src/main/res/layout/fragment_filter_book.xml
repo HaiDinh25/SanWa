@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout style="@style/LinearLayoutVertical">
+
+        <RelativeLayout
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/padding_medium">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/layoutButton">
+
+                <LinearLayout
+                    android:id="@+id/rootView"
+                    style="@style/LinearLayoutVertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/layoutCategory"
+                        style="@style/LinearLayoutVertical"
+                        android:layout_marginBottom="@dimen/margin_large">
+
+                        <TextView
+                            style="@style/TextViewBoldWrapContent"
+                            android:padding="@dimen/margin_small"
+                            android:text="@string/filter_category"
+                            android:textColor="@color/colorTextPrimary" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_small" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayoutVertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextViewBoldWrapContent"
+                            android:padding="@dimen/margin_small"
+                            android:text="@string/filter_type"
+                            android:textColor="@color/colorTextPrimary" />
+
+                        <LinearLayout
+                            style="@style/LinearLayoutHorizontal"
+                            android:padding="@dimen/margin_small">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/button_height_medium"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_button_blur_border">
+
+                                <TextView
+                                    android:id="@+id/btnBook"
+                                    style="@style/BookDetailButtonSplitWidth"
+                                    android:layout_width="match_parent"
+                                    android:background="@drawable/bg_button_blur_border"
+                                    android:text="@string/filter_type_book"
+                                    android:textColor="@color/colorTextPrimary" />
+
+                                <ImageView
+                                    android:id="@+id/checkBook"
+                                    android:layout_width="@dimen/dimen_30"
+                                    android:layout_height="@dimen/dimen_20"
+                                    android:background="@drawable/bg_check_button_filter"
+                                    android:padding="@dimen/padding_small"
+                                    android:src="@drawable/ic_check"
+                                    android:visibility="gone" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/button_height_medium"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_button_blur_border">
+
+                                <TextView
+                                    android:id="@+id/btnAudioBook"
+                                    style="@style/BookDetailButtonSplitWidth"
+                                    android:layout_width="match_parent"
+                                    android:background="@drawable/bg_button_blur_border"
+                                    android:text="@string/filter_type_audio"
+                                    android:textColor="@color/colorTextPrimary" />
+
+                                <ImageView
+                                    android:id="@+id/checkAudio"
+                                    android:layout_width="@dimen/dimen_30"
+                                    android:layout_height="@dimen/dimen_20"
+                                    android:background="@drawable/bg_check_button_filter"
+                                    android:padding="@dimen/padding_small"
+                                    android:src="@drawable/ic_check"
+                                    android:visibility="gone" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutPublisher"
+                        style="@style/LinearLayoutVertical"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginBottom="@dimen/margin_large"
+                        android:padding="@dimen/margin_small">
+
+                        <View style="@style/View" />
+
+                        <TextView
+                            android:id="@+id/btnPublisher"
+                            style="@style/MoreTextViewMenuTitle"
+                            android:layout_marginStart="0dp"
+                            android:text="@string/filter_publisher"
+                            android:textColor="@color/colorTextPrimary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvPublisher"
+                            style="@style/TextViewNormalWrapContent"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/padding_medium"
+                            android:paddingBottom="@dimen/padding_medium"
+                            android:textColor="@color/colorCircleTint"
+                            android:visibility="gone" />
+
+                        <View style="@style/View" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayoutVertical"
+                        android:layout_marginBottom="@dimen/margin_large">
+
+                        <TextView
+                            style="@style/TextViewBoldWrapContent"
+                            android:padding="@dimen/margin_small"
+                            android:text="@string/filter_price_range"
+                            android:textColor="@color/colorTextPrimary" />
+
+                        <LinearLayout
+                            style="@style/LinearLayoutHorizontal"
+                            android:padding="@dimen/margin_small">
+
+                            <com.sanwashoseki.bookskozuchi.business.filter.views.SWAutoFormatEditTextPrice
+                                android:id="@+id/edtPriceMin"
+                                style="@style/BookDetailButtonSplitWidth"
+                                android:background="@drawable/bg_button_blur_border"
+                                android:ellipsize="end"
+                                android:hint="@string/filter_price_min"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:nextFocusDown="@id/edtPriceMax"
+                                android:padding="@dimen/padding_medium"
+                                android:textColor="@color/colorTextPrimary"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:text="~"
+                                android:textColor="@color/colorTextPrimary" />
+
+                            <com.sanwashoseki.bookskozuchi.business.filter.views.SWAutoFormatEditTextPrice
+                                android:id="@+id/edtPriceMax"
+                                style="@style/BookDetailButtonSplitWidth"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:background="@drawable/bg_button_blur_border"
+                                android:ellipsize="end"
+                                android:hint="@string/filter_price_max"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:padding="@dimen/padding_medium"
+                                android:textColor="@color/colorTextPrimary"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:id="@+id/layoutButton"
+                style="@style/LinearLayoutHorizontal"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/btnClear"
+                    style="@style/BookDetailButtonSplitWidth"
+                    android:background="@drawable/bg_button_inactive"
+                    android:text="@string/filter_button_clear"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/btnApply"
+                    style="@style/BookDetailButtonSplitWidth"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:background="@drawable/bg_button_authentication"
+                    android:text="@string/filter_button_apply"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</layout>

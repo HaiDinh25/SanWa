@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#00000000" />
+            <stroke
+                android:width="@dimen/dimen_1"
+                android:color="@color/colorCircleShoppingCartTint"
+                android:dashWidth="5dp"
+                android:dashGap="5dp" />
+            <corners android:radius="@dimen/dimen_5" />
+        </shape>
+    </item>
+</layer-list>

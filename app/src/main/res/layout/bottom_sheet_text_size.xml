@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="foo"
+            type="int" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/btsSize"
+        style="@style/LayoutMaxSize"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:id="@+id/layoutBtsSize"
+            style="@style/LinearLayoutVertical"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_background_bottom_sheet"
+            android:elevation="20dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                style="@style/TextViewNormalWrapContent"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_background_bottom_sheet"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabMode="auto"
+                app:tabSelectedTextColor="@color/colorAccent"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                app:tabTextColor="@color/colorTextPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_e" />
+
+            <com.sanwashoseki.bookskozuchi.utilities.SWSwipeDisableViewPager
+                android:id="@+id/viewPageTextSize"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

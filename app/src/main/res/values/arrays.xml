@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="tick_below_text_length_5">
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>1x</item>
+        <item>1.25x</item>
+        <item>1.75x</item>
+        <item>2x</item>
+    </array>
+
+</resources>

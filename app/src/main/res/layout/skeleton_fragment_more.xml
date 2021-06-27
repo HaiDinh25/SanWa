@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_large">
+
+        <LinearLayout style="@style/LinearLayoutHorizontal">
+
+            <View
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_100"
+                android:background="@drawable/ic_not_login_border" />
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_large"
+                android:background="@drawable/bg_skeleton_conner_medium"
+                android:padding="@dimen/padding_medium" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:background="@color/colorSkeleton"
+                    android:padding="@dimen/padding_smaller" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutVertical"
+            android:layout_marginTop="@dimen/margin_large">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_width="@dimen/dimen_200"
+                android:background="@drawable/bg_skeleton_conner_medium"
+                android:padding="@dimen/padding_medium" />
+
+            <TextView
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+            <TextView
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutVertical"
+            android:layout_marginTop="@dimen/margin_larger">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_width="@dimen/dimen_200"
+                android:background="@drawable/bg_skeleton_conner_medium"
+                android:padding="@dimen/padding_medium" />
+
+            <TextView
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+            <TextView
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+            <TextView
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewNormalWrapContent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_largest"
+            android:layout_marginTop="@dimen/margin_largest"
+            android:layout_marginEnd="@dimen/margin_largest"
+            android:background="@drawable/bg_skeleton_conner_medium"
+            android:padding="@dimen/padding_medium" />
+
+    </LinearLayout>
+
+</layout>

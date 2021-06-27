@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingEnd="@dimen/padding_small">
+
+        <TextView
+            android:id="@+id/tvNull"
+            style="@style/TextViewNormalWrapContent"
+            android:padding="@dimen/padding_small"
+            android:text="@string/library_my_book_empty"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layoutCategoryProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/layoutMore"
+                style="@style/LinearLayoutHorizontal">
+
+                <TextView
+                    android:id="@+id/tvCategoryName"
+                    style="@style/TextViewBoldWrapContent"
+                    android:layout_width="match_parent"
+                    android:layout_toStartOf="@id/btnMore" />
+
+                <TextView
+                    android:id="@+id/btnMore"
+                    style="@style/BookStoreButtonMore"
+                    app:drawableEndCompat="@drawable/ic_view_more" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcCategoryProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</layout>

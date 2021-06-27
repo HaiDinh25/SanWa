@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".business.authentication.register.views.SWRegisterFragment">
+
+        <LinearLayout
+            android:id="@+id/container"
+            style="@style/LinearLayoutVertical"
+            android:layout_marginLeft="@dimen/dimen_100"
+            android:layout_marginRight="@dimen/dimen_100"
+            android:padding="@dimen/padding_large">
+
+            <LinearLayout
+                android:id="@+id/btnSignIn"
+                style="@style/LinearLayoutHorizontal"
+                android:layout_marginTop="@dimen/margin_larger"
+                android:gravity="end">
+
+                <TextView
+                    style="@style/TextViewNormalWrapContent"
+                    android:text="@string/register_text_view_have_account" />
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:text="@string/register_text_view_sign_in" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_marginTop="@dimen/margin_larger"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/register_text_view_title"
+                android:textSize="20sp" />
+
+            <LinearLayout style="@style/LinearLayoutVertical">
+
+                <LinearLayout
+                    style="@style/LinearLayoutVertical"
+                    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/AuthenticationTextInPutLayout"
+                        android:layout_marginTop="@dimen/margin_medium">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtFirstName"
+                            style="@style/AuthenticationTextInputEdtText"
+                            android:hint="@string/register_text_view_first_name"
+                            android:inputType="text"
+                            android:maxLength="200"
+                            android:nextFocusDown="@id/edtLastName" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvErrorFirstName"
+                        style="@style/TextViewError"
+                        android:text="@string/text_required"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/AuthenticationTextInPutLayout"
+                        android:layout_marginTop="@dimen/margin_medium">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtLastName"
+                            style="@style/AuthenticationTextInputEdtText"
+                            android:hint="@string/register_text_view_last_name"
+                            android:inputType="text"
+                            android:maxLength="200"
+                            android:nextFocusDown="@id/edtEmail" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvErrorLastName"
+                        style="@style/TextViewError"
+                        android:text="@string/text_required"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/AuthenticationTextInPutLayout"
+                        android:layout_marginTop="@dimen/margin_medium">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtEmail"
+                            style="@style/AuthenticationTextInputEdtText"
+                            android:hint="@string/register_text_view_email"
+                            android:inputType="text"
+                            android:maxLength="200"
+                            android:nextFocusDown="@id/edtPassWord" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvErrorEmail"
+                        style="@style/TextViewError"
+                        android:text="@string/text_required"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/AuthenticationTextInPutLayout"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtPassWord"
+                            style="@style/AuthenticationTextInputEdtText"
+                            android:hint="@string/register_text_view_pass"
+                            android:imeOptions="flagForceAscii"
+                            android:inputType="textPassword"
+                            android:maxLength="60"
+                            android:nextFocusDown="@id/edtConfirmPassWord" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvErrorPass"
+                        style="@style/TextViewError"
+                        android:text="@string/text_required"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/AuthenticationTextInPutLayout"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtConfirmPassWord"
+                            style="@style/AuthenticationTextInputEdtText"
+                            android:hint="@string/register_text_view_confirm_pass"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:maxLength="60"
+                            android:nextFocusDown="@id/edtConfirmPassWord" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvErrorConfirmPass"
+                        style="@style/TextViewError"
+                        android:text="@string/text_required"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnPrivacy"
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="@string/register_text_view_note"
+                    android:textColor="@color/colorTextPrimary" />
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    style="@style/AuthenticationButton"
+                    android:layout_marginTop="@dimen/margin_larger"
+                    android:background="@drawable/bg_button_authentication"
+                    android:enabled="true"
+                    android:text="@string/register_button_sign_up" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontal"
+                    android:layout_marginTop="@dimen/margin_larger"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/margin_larger"
+                        android:layout_weight="3"
+                        android:background="@color/colorHint" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/register_text_view_or"
+                        android:textColor="@color/colorHint" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/margin_larger"
+                        android:layout_weight="3"
+                        android:background="@color/colorHint" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnSignInLine"
+                    style="@style/AuthenticationButton"
+                    android:layout_marginTop="@dimen/margin_larger"
+                    android:background="@drawable/bg_btn_sign_in_line"
+                    android:enabled="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:src="@drawable/ic_line" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/register_button_line"
+                        android:textColor="@color/colorLineBackGround"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnSignInFacebook"
+                    style="@style/AuthenticationButton"
+                    android:layout_marginTop="@dimen/margin_larger"
+                    android:background="@drawable/bg_btn_sign_in_facebook"
+                    android:enabled="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:src="@drawable/ic_facebook" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/register_button_facebook"
+                        android:textColor="@color/colorFacebookBackGround"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

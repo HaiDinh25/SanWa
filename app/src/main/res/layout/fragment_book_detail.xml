@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout style="@style/LinearLayoutVertical">
+
+        <RelativeLayout
+            android:id="@+id/rootView"
+            style="@style/LinearLayoutVertical"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/layoutBook"
+                style="@style/LinearLayoutHorizontal"
+                android:clipChildren="false"
+                android:padding="@dimen/padding_small">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dimen_120"
+                    android:layout_height="@dimen/dimen_150"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:cardCornerRadius="@dimen/book_corner"
+                    app:cardElevation="@dimen/book_corner">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        style="@style/ImageView" />
+
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/TextViewBoldWrapContent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_smaller" />
+
+                    <TextView
+                        android:id="@+id/tvShortDescription"
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_below="@id/tvName"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_smaller" />
+
+                    <TextView
+                        android:id="@+id/tvAuthor"
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_below="@id/tvShortDescription"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_smaller" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/RatingBar"
+                        android:layout_above="@id/tvPrice" />
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        style="@style/TextViewBoldWrapContent"
+                        android:layout_above="@id/layoutBtn"
+                        android:padding="@dimen/padding_smaller"
+                        android:textColor="@color/colorAccent" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutBtn"
+                        style="@style/LinearLayoutVertical"
+                        android:layout_alignParentBottom="true">
+
+                        <LinearLayout
+                            android:id="@+id/btnSample"
+                            style="@style/BookDetailButtonMatchWidth">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_book_detail_sample" />
+
+                            <TextView
+                                style="@style/TextViewBoldWrapContent"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:text="@string/book_detail_button_sample"
+                                android:textColor="@color/colorHint" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnReadBook"
+                            style="@style/BookDetailButtonMatchWidth"
+                            android:longClickable="false"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_book_detail_read_book" />
+
+                            <TextView
+                                style="@style/TextViewBoldWrapContent"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:text="@string/book_detail_button_read"
+                                android:textColor="@color/colorHint" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/layoutButton"
+                android:layout_below="@id/layoutBook">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    style="@style/TabLayout"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_header"
+                    android:elevation="@dimen/elevation_8dp" />
+
+                <com.sanwashoseki.bookskozuchi.utilities.SWSwipeDisableViewPager
+                    android:id="@+id/viewPage"
+                    style="@style/LayoutMaxSize"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutButton"
+                style="@style/LinearLayoutHorizontal"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_header"
+                android:elevation="@dimen/elevation_20dp"
+                android:padding="@dimen/padding_medium">
+
+                <LinearLayout
+                    android:id="@+id/btnGetItNow"
+                    style="@style/BookDetailButtonSplitWidth"
+                    android:layout_marginStart="@dimen/padding_small"
+                    android:layout_marginEnd="@dimen/padding_small"
+                    android:background="@drawable/bg_button_red_background">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_book_detail_get_it_now" />
+
+                    <TextView
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:text="@string/book_detail_button_get_it_now"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnPurchase"
+                    style="@style/BookDetailButtonSplitWidth"
+                    android:layout_marginStart="@dimen/padding_small"
+                    android:layout_marginEnd="@dimen/padding_small"
+                    android:background="@drawable/bg_button_red_border">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_book_detail_puschare_store" />
+
+                    <TextView
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:text="@string/book_detail_button_purchase"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

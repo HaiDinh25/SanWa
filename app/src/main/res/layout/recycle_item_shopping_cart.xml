@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:background="@drawable/bg_header"
+        android:elevation="@dimen/elevation_8dp">
+
+        <RelativeLayout
+            android:id="@+id/layoutData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/View"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium" />
+
+            <RelativeLayout
+                android:id="@+id/background"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/container"
+                android:layout_alignBottom="@id/container"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_medium">
+
+                <ImageView
+                    android:id="@+id/btnDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rc_delete_background_view"
+                    android:src="@drawable/ic_delete" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/container"
+                style="@style/LinearLayoutHorizontal"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/padding_medium">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    style="@style/CheckBox"
+                    android:layout_gravity="center_vertical" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dimen_80"
+                    android:layout_height="@dimen/dimen_100"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:cardCornerRadius="@dimen/book_corner"
+                    app:cardElevation="@dimen/book_corner">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        style="@style/ImageView" />
+
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:padding="@dimen/margin_small">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/TextViewBoldWrapContent"
+                        android:ellipsize="end"
+                        android:maxLines="2" />
+
+                    <TextView
+                        android:id="@+id/tvAuthor"
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_below="@id/tvName"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <RelativeLayout
+                        style="@style/LinearLayoutHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/RatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/margin_small" />
+
+                        <TextView
+                            android:id="@+id/tvPrice"
+                            style="@style/TextViewBoldWrapContent"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/colorAccent" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutHide"
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent"
+            android:background="@color/colorRatioHint"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/shopping_cart_not_available_title" />
+
+            <LinearLayout
+                android:id="@+id/btnSearchSimilar"
+                style="@style/LinearLayoutHorizontal"
+                android:layout_width="wrap_content"
+                android:background="@color/colorNotAvailable"
+                android:gravity="center"
+                android:padding="@dimen/padding_small">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_shopping_search_similar" />
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/shopping_cart_search_similar"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>
+

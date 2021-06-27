@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <item tools:ignore="StateListReachable">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/corners_medium" />
+            <solid android:color="@color/colorGoogleBackGround" />
+            <stroke android:width="@dimen/dimen_1" android:color="@color/colorGoogleBackGround" />
+        </shape>
+
+    </item>
+
+</selector>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/text_size_20sp"
+        android:background="@drawable/shape_10_white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_bookmark_dialog" />
+
+        <TextView
+            style="@style/TextViewBoldWrapContent"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/bookmark_note"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            style="@style/TextViewNormalWrapContent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_10"
+            android:text="@string/bookmark_note"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_size_10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bt_negative"
+                style="@style/ButtonInDialog"
+                android:backgroundTint="#C2C2C2"
+                android:text="@string/text_no"/>
+
+            <TextView
+                android:id="@+id/bt_positive"
+                style="@style/ButtonInDialog"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:background="@drawable/shape_10dp_corner"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/text_yes" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

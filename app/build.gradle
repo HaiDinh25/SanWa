@@ -1,0 +1,191 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'deploygate'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('../keystore/keystore.jks')
+            storePassword 'S@nTTSF0rB00k$'
+            keyPassword 'S@nTTSF0rB00k$'
+            keyAlias 'SanwaShoseki'
+        }
+    }
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.sanwashoseki.bookskozuchi"
+        minSdkVersion 28
+        targetSdkVersion 30
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        setProperty("archivesBaseName", "Kozuchi")
+        signingConfig signingConfigs.release
+    }
+
+    buildFeatures {
+        //noinspection DataBindingWithoutKapt
+        dataBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions 'root'
+    productFlavors {
+        develop {
+            dimension 'root'
+            versionCode 1
+            versionName "1.0.0"
+            buildConfigField "int", "TOKEN_TIME_LIFE", "86400"
+            buildConfigField "int", "IMAGES_UPLOAD_LIMIT", "10"
+            buildConfigField "String", "HOST_API_URL", "\"https://audiobook.vnit.top/\""
+            buildConfigField "String", "TERMS_URL", "\"https://audiobook.vnit.top/termandcondition\""
+            buildConfigField "String", "FIELD_USERNAME", "\"letrang@yopmail.com\""
+            buildConfigField "String", "FIELD_PASSWORD", "\"trang123456\""
+            buildConfigField "String", "FIELD_URL", "\".sanwa.jp\""
+            applicationIdSuffix '.dev'
+        }
+        product {
+            dimension 'root'
+            versionCode 1
+            versionName "1.0.0"
+            buildConfigField "int", "TOKEN_TIME_LIFE", "86400"
+            buildConfigField "int", "IMAGES_UPLOAD_LIMIT", "10"
+            buildConfigField "String", "HOST_API_URL", "\"https://sanwa.vnit.top/\""
+            buildConfigField "String", "TERMS_URL", "\"https://sanwa.vnit.top/termandcondition\""
+            buildConfigField "String", "FIELD_USERNAME", "\"\""
+            buildConfigField "String", "FIELD_PASSWORD", "\"\""
+            buildConfigField "String", "FIELD_URL", "\".sanwa.jp\""
+        }
+        staging {
+            dimension 'root'
+            versionCode 1
+            versionName "1.0.0"
+            buildConfigField "int", "TOKEN_TIME_LIFE", "86400"
+            buildConfigField "int", "IMAGES_UPLOAD_LIMIT", "10"
+            buildConfigField "String", "HOST_API_URL", "\"https://sanwa.vnit.top/\""
+            buildConfigField "String", "TERMS_URL", "\"https://sanwa.vnit.top/termandcondition\""
+            buildConfigField "String", "FIELD_USERNAME", "\"letrang@yopmail.com\""
+            buildConfigField "String", "FIELD_PASSWORD", "\"trang123456\""
+            buildConfigField "String", "FIELD_URL", "\".sanwa.jp\""
+            applicationIdSuffix '.stg'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${archivesBaseName} ${variant.name} v${variant.versionName} b${variant.versionCode}.apk"
+        }
+    }
+
+}
+
+final RX_BINDING_VERSION = "2.1.1"
+final RX_ANDROID_VERSION = "2.1.1"
+final RX_JAVA_VERSION = "2.2.19"
+final RECYCLERVIEW_VERSION = "1.2.0"
+final RETROFIT_LIBRARY_VERSION = "2.6.0"
+final OKHTTP3_VERSION = "4.3.1"
+final GSON_VERSION = "2.8.6"
+final FB_SDK_VERSION = "7.1.0"
+final LINE_SDK_VERSION = "5.4.0"
+final GOOGLE_VERSION = "19.0.0"
+final GLIDE_VERSION = "4.11.0"
+final PREF_VERSION = "1.1.1"
+final CIRCLE_IMAGE_VERSION = "3.1.0"
+final SWITCH_BUTTON_VERSION = "0.0.3@aar"
+final SKELETON = "1.1.2"
+final SHIMMER_LAYOUT = "2.1.0"
+final FIREBASE_MESSAGING = "21.1.0"
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "androidx.recyclerview:recyclerview:${RECYCLERVIEW_VERSION}"
+    implementation 'com.google.android.material:material:1.4.0-beta01'
+    implementation "androidx.preference:preference-ktx:${PREF_VERSION}"
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //curl page
+    implementation 'app.num.numandroidpagecurleffect:numandroidpagecurleffect:1.0'
+
+    //glide
+    implementation "com.github.bumptech.glide:glide:${GLIDE_VERSION}"
+    annotationProcessor "com.github.bumptech.glide:compiler:${GLIDE_VERSION}"
+
+    //Rx
+    implementation "io.reactivex.rxjava2:rxandroid:${RX_ANDROID_VERSION}"
+    implementation "io.reactivex.rxjava2:rxjava:${RX_JAVA_VERSION}"
+    implementation "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${RX_BINDING_VERSION}"
+
+    //network
+    implementation "com.squareup.okhttp3:okhttp:${OKHTTP3_VERSION}"
+    implementation "com.squareup.okhttp3:logging-interceptor:${OKHTTP3_VERSION}"
+    implementation "com.google.code.gson:gson:${GSON_VERSION}"
+    implementation "com.squareup.retrofit2:retrofit:${RETROFIT_LIBRARY_VERSION}"
+    implementation "com.squareup.retrofit2:retrofit-mock:${RETROFIT_LIBRARY_VERSION}"
+    implementation "com.squareup.retrofit2:converter-gson:${RETROFIT_LIBRARY_VERSION}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${RETROFIT_LIBRARY_VERSION}"
+
+    //fb, line sdk
+    implementation "com.facebook.android:facebook-login:${FB_SDK_VERSION}"
+    implementation "com.linecorp.linesdk:linesdk:${LINE_SDK_VERSION}"
+
+    //google
+    implementation "com.google.android.gms:play-services-auth:${GOOGLE_VERSION}"
+    implementation platform('com.google.firebase:firebase-bom:26.1.1')
+    implementation "com.google.firebase:firebase-messaging:${FIREBASE_MESSAGING}"
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //round image
+    implementation "de.hdodenhof:circleimageview:${CIRCLE_IMAGE_VERSION}"
+
+    //switch button
+    implementation "com.github.zcweng:switch-button:${SWITCH_BUTTON_VERSION}"
+
+    implementation "com.ethanhua:skeleton:${SKELETON}"
+    implementation "io.supercharge:shimmerlayout:${SHIMMER_LAYOUT}"
+
+    implementation "com.karumi:dexter:6.0.2"
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation 'com.github.warkiz.widget:indicatorseekbar:1.1.2'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+
+    // PDF Libraries
+    implementation 'org.greenrobot:eventbus:3.2.0'
+
+    implementation 'com.tom_roush:pdfbox-android:1.8.10.3'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+
+    implementation 'com.apandroid:colorwheel:1.0.3'
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+    implementation 'androidx.biometric:biometric:1.1.0'
+
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

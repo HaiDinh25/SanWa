@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    style="@style/LinearLayoutVertical"
+    android:background="@drawable/bg_header"
+    android:elevation="@dimen/elevation_16dp">
+
+    <RelativeLayout
+        style="@style/LayoutMaxSize"
+        android:padding="@dimen/padding_small">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/ButtonInHeaderReading"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/btnBack"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/btnRotate"
+                style="@style/ButtonInHeaderReading"
+                android:src="@drawable/ic_reading_rotate" />
+
+            <ImageView
+                android:id="@+id/btnTextSize"
+                style="@style/ButtonInHeaderReading"
+                android:src="@drawable/ic_reading_size_text" />
+
+            <ImageView
+                android:id="@+id/saveBookmarkButton"
+                style="@style/ButtonInHeaderReading"
+                android:src="@drawable/ic_reading_save" />
+
+            <ImageView
+                android:id="@+id/btnVoice"
+                style="@style/ButtonInHeaderReading"
+                android:src="@drawable/ic_reading_sound" />
+
+            <ImageView
+                android:id="@+id/menuButton"
+                style="@style/ButtonInHeaderReading"
+                android:src="@drawable/ic_reading_menu" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

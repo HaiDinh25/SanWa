@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_small">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="@dimen/book_corner"
+                app:cardElevation="@dimen/book_corner">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewSeller"
+                        style="@style/ImageView" />
+
+                    <ImageView
+                        android:id="@+id/icListenerItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/margin_small"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:src="@drawable/ic_listener" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvNumItem"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_circle_top_seller"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_small"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_small">
+
+        <RelativeLayout
+            android:id="@+id/layoutTitle"
+            style="@style/LinearLayoutHorizontal">
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/btnWishList">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/TextViewBoldWrapContent"
+                    android:layout_width="match_parent"
+                    android:ellipsize="end"
+                    android:maxLines="2" />
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    style="@style/TextViewNormalWrapContent"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnWishList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_wish_list"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutVertical"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/TextViewBoldWrapContent"
+                android:textColor="@color/colorAccent" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/RatingBar"
+                android:layout_marginTop="@dimen/margin_small" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVertical"
+    android:layout_margin="@dimen/padding_small">
+
+    <TextView
+        style="@style/RecycleViewItemTitle"
+        android:layout_marginEnd="@dimen/dimen_150"
+        android:background="@drawable/bg_skeleton_conner_small"
+        android:padding="@dimen/padding_smaller" />
+
+    <TextView
+        style="@style/RecycleViewItemTitle"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/bg_skeleton_conner_small"
+        android:padding="@dimen/padding_smaller" />
+
+    <TextView
+        style="@style/RecycleViewItemTitle"
+        android:layout_marginStart="@dimen/dimen_200"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/bg_skeleton_conner_small"
+        android:gravity="end"
+        android:padding="@dimen/padding_smaller" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/colorSkeleton" />
+
+</LinearLayout>

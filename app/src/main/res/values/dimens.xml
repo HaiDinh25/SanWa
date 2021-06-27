@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_35">35dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_72">72dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_130">130dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_180">180dp</dimen>
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_230">230dp</dimen>
+    <dimen name="dimen_250">250dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+    <dimen name="dimen_400">400dp</dimen>
+    <dimen name="dimen_450">450dp</dimen>
+    <dimen name="dimen_500">500dp</dimen>
+
+    <dimen name="margin_smallest">1dp</dimen>
+    <dimen name="margin_smaller">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_larger">24dp</dimen>
+    <dimen name="margin_largest">32dp</dimen>
+
+    <dimen name="padding_smallest">1dp</dimen>
+    <dimen name="padding_smaller">2dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_larger">24dp</dimen>
+    <dimen name="padding_largest">32dp</dimen>
+
+    <dimen name="corners_smallest">1dp</dimen>
+    <dimen name="corners_smaller">2dp</dimen>
+    <dimen name="corners_small">4dp</dimen>
+    <dimen name="corners_medium">8dp</dimen>
+    <dimen name="corners_large">16dp</dimen>
+    <dimen name="corners_larger">24dp</dimen>
+    <dimen name="book_corner">0dp</dimen>
+
+    <dimen name="elevation_smallest">1dp</dimen>
+    <dimen name="elevation_smaller">2dp</dimen>
+
+    <dimen name="button_height_small">24dp</dimen>
+    <dimen name="button_height_medium">40dp</dimen>
+    <dimen name="button_height_large">50dp</dimen>
+
+    <dimen name="quick_action_icon_size">24dp</dimen>
+    <dimen name="quick_action_arrow_width">30dp</dimen>
+    <dimen name="quick_action_arrow_height">20dp</dimen>
+    <dimen name="quick_action_corner">4dp</dimen>
+    <dimen name="quick_action_shadow_size">1dp</dimen>
+    <dimen name="quick_action_separator_width">1dp</dimen>
+
+    <dimen name="text_size_8sp">8sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_32sp">32sp</dimen>
+
+    <dimen name="elevation_4dp">4dp</dimen>
+    <dimen name="elevation_6dp">6dp</dimen>
+    <dimen name="elevation_8dp">8dp</dimen>
+    <dimen name="elevation_10dp">10dp</dimen>
+    <dimen name="elevation_16dp">16dp</dimen>
+    <dimen name="elevation_20dp">20dp</dimen>
+
+</resources>

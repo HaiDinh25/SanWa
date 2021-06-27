@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:layout_marginTop="@dimen/text_size_10sp"
+        android:paddingStart="@dimen/dimen_10"
+        android:paddingEnd="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/tvChapter"
+            style="@style/TextViewBoldWrapContent"
+            android:textColor="@color/colorTextPrimary"
+            tools:text="Chapter 1" />
+
+        <TextView
+            android:id="@+id/tvChapterContent"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:maxLines="2"
+            android:textColor="@color/gray_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/gray_e" />
+
+    </LinearLayout>
+
+</layout>

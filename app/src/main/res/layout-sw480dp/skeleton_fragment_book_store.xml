@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:layout_width="@dimen/dimen_200"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_medium" />
+
+        <LinearLayout
+            style="@style/LinearLayoutHorizontal"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_skeleton_conner_medium"
+                android:padding="@dimen/padding_larger" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_larger"
+                android:layout_weight="1"
+                android:background="@drawable/bg_skeleton_conner_medium"
+                android:padding="@dimen/padding_larger" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/dimen_200"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_larger"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_medium" />
+
+        <LinearLayout
+            style="@style/LinearLayoutHorizontal"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_500"
+                    android:background="@drawable/bg_skeleton_conner_large"
+                    android:padding="@dimen/padding_larger" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/bg_skeleton_conner_small"
+                    android:padding="@dimen/padding_small" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginEnd="@dimen/dimen_50"
+                    android:background="@drawable/bg_skeleton_conner_small"
+                    android:padding="@dimen/padding_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_500"
+                    android:background="@drawable/bg_skeleton_conner_large"
+                    android:padding="@dimen/padding_larger" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/bg_skeleton_conner_small"
+                    android:padding="@dimen/padding_small" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginEnd="@dimen/dimen_50"
+                    android:background="@drawable/bg_skeleton_conner_small"
+                    android:padding="@dimen/padding_small" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/dimen_200"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_larger"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_medium" />
+
+        <LinearLayout
+            style="@style/LinearLayoutHorizontal"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <RelativeLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_150"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_skeleton_conner_medium"
+                    android:padding="@dimen/padding_larger" />
+
+                <RelativeLayout
+                    style="@style/LinearLayoutVertical"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_toEndOf="@id/imageView1">
+
+                    <LinearLayout style="@style/LinearLayoutVertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_skeleton_conner_small"
+                            android:padding="@dimen/padding_smaller" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:background="@drawable/bg_skeleton_conner_small"
+                            android:padding="@dimen/padding_smaller" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_smaller" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_height="@dimen/dimen_150"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_skeleton_conner_medium"
+                    android:padding="@dimen/padding_larger" />
+
+                <RelativeLayout
+                    style="@style/LinearLayoutVertical"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_toEndOf="@id/imageView2">
+
+                    <LinearLayout style="@style/LinearLayoutVertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_skeleton_conner_small"
+                            android:padding="@dimen/padding_smaller" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:background="@drawable/bg_skeleton_conner_small"
+                            android:padding="@dimen/padding_smaller" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_smaller" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

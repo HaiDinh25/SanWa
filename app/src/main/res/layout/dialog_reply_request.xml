@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_large">
+
+        <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+            <TextView
+                android:id="@+id/tvReplyTo"
+                style="@style/TextViewBoldWrapContent"
+                android:text="@string/request_reply_title" />
+
+            <ImageView
+                android:id="@+id/btnImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_request_image" />
+
+            <ImageView
+                android:id="@+id/btnCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_toStartOf="@id/btnImage"
+                android:src="@drawable/ic_request_camera" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/corners_medium"
+            app:cardElevation="@dimen/corners_small">
+
+            <ImageView
+                android:id="@+id/imageView"
+                style="@style/ImageView" />
+
+            <ImageView
+                android:id="@+id/btnRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:src="@drawable/ic_close" />
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/edtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/bg_edt_sign_in"
+            android:gravity="top"
+            android:hint="@string/request_reply_reply_here"
+            android:imeOptions="actionDone"
+            android:maxLength="255"
+            android:maxLines="5"
+            android:padding="@dimen/padding_medium"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvErrorContent"
+            style="@style/TextViewError"
+            android:text="@string/text_required"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/LinearLayoutHorizontal"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                android:id="@+id/tvCount"
+                style="@style/TextViewNormalWrapContent"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="end"
+                android:hint="@string/request_book_text_view_count" />
+
+            <Button
+                android:id="@+id/btnSendReply"
+                style="@style/AuthenticationButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_button_authentication"
+                android:enabled="true"
+                android:paddingStart="@dimen/padding_larger"
+                android:paddingEnd="@dimen/padding_larger"
+                android:text="@string/request_reply_button" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="foo"
+            type="int" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/btsAdjustList"
+        style="@style/LayoutMaxSize"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:id="@+id/layoutBtsAdjustList"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_background_bottom_sheet"
+            android:elevation="@dimen/elevation_20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/backListButton"
+                    style="@style/ImageInHeaderBottomSheet"
+                    android:src="@drawable/ic_cancel" />
+
+                <TextView
+                    style="@style/TextViewHeaderInBottomSheet"
+                    android:text="@string/reading_voice_reader_title" />
+
+                <ImageView
+                    android:id="@+id/addDictionaryButton"
+                    style="@style/ImageInHeaderBottomSheet"
+                    android:rotation="45"
+                    android:src="@drawable/ic_cancel"
+                    app:tint="@color/header" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_e" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dictionariesRecyclerView"
+                style="@style/LayoutMaxSize"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

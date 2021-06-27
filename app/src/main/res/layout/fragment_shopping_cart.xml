@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout style="@style/LinearLayoutVertical">
+
+        <RelativeLayout
+            android:id="@+id/rootView"
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutEmpty"
+                style="@style/LinearLayoutVertical"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="@dimen/dimen_100"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_shopping_empty" />
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_medium"
+                    android:text="@string/shopping_empty_title" />
+
+                <TextView
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:padding="@dimen/padding_medium"
+                    android:text="@string/shopping_empty_content" />
+
+                <TextView
+                    android:id="@+id/btnFindBook"
+                    style="@style/BookDetailButtonMatchWidth"
+                    android:layout_marginStart="@dimen/margin_largest"
+                    android:layout_marginTop="@dimen/margin_larger"
+                    android:layout_marginEnd="@dimen/margin_largest"
+                    android:background="@drawable/bg_button_authentication"
+                    android:enabled="true"
+                    android:text="@string/shopping_empty_button_find"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutData"
+                style="@style/LinearLayoutVertical"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/layoutCheckAll"
+                    style="@style/LinearLayoutHorizontal"
+                    android:background="@drawable/bg_header"
+                    android:elevation="@dimen/elevation_4dp"
+                    android:padding="@dimen/padding_medium">
+
+                    <CheckBox
+                        android:id="@+id/checkAll"
+                        style="@style/CheckBox"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@id/checkAll"
+                        android:padding="@dimen/padding_medium"
+                        android:text="@string/shopping_check_all" />
+
+                    <TextView
+                        android:id="@+id/btnEmpty"
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/bg_button_empty_cart"
+                        android:padding="@dimen/padding_medium"
+                        android:text="@string/shopping_empty_cart"
+                        android:textColor="@color/colorTextPrimary" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/layout"
+                    android:layout_below="@+id/layoutCheckAll" />
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    style="@style/LinearLayoutVertical"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bg_header"
+                    android:elevation="@dimen/elevation_20dp"
+                    android:padding="@dimen/padding_small"
+                    android:paddingStart="@dimen/padding_medium"
+                    android:paddingEnd="@dimen/padding_medium">
+
+                    <RelativeLayout
+                        style="@style/LinearLayoutVertical"
+                        android:layout_margin="@dimen/margin_smaller">
+
+                        <TextView
+                            style="@style/TextViewBoldWrapContent"
+                            android:layout_width="match_parent"
+                            android:layout_toStartOf="@id/tvAmount"
+                            android:text="@string/shoping_total" />
+
+                        <TextView
+                            android:id="@+id/tvAmount"
+                            style="@style/TextViewNormalWrapContent"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/LinearLayoutVertical"
+                        android:layout_margin="@dimen/margin_smaller">
+
+                        <TextView
+                            style="@style/TextViewBoldWrapContent"
+                            android:layout_width="match_parent"
+                            android:layout_toStartOf="@id/tvTotalItem"
+                            android:text="@string/shopping_book_number" />
+
+                        <TextView
+                            android:id="@+id/tvTotalItem"
+                            style="@style/TextViewNormalWrapContent"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/View"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:background="@color/colorClickedAnim" />
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        style="@style/BookDetailButtonMatchWidth"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:background="@drawable/bg_button_authentication"
+                        android:text="@string/shopping_next"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

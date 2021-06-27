@@ -1,0 +1,402 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SanWa</string>
+    <string name="fb_app_id">3692096714245061</string>
+    <string name="fb_app_scheme">fb3692096714245061</string>
+
+    //OTHER
+    <string name="currency">￥</string>
+    <string name="book_number">冊</string>
+    <string name="dialog_confirm">確認</string>
+    <string name="dialog_confirm_sign_in">この機能を使用するにはログインしてください。</string>
+    <string name="dialog_add_shopping_cart_success">書籍が正常にカートに追加されました。</string>
+    <string name="dialog_confirm_delete_item_shopping_cart">この本をカートから削除してもよろしいですか。</string>
+    <string name="dialog_confirm_delete_all_shopping_cart">カートから書籍を全て削除してもよろしいですか。</string>
+    <string name="dialog_confirm_delete_wish_list">この本をウィッシュリストから削除してもよろしいですか。</string>
+    <string name="text_required">この項目は必須です。</string>
+    <string name="no_result">結果が見つかりません。</string>
+    <string name="dialog_expired_token">ログインセッションの有効期限が切れました。</string>
+    <string name="dialog_contacts_thanks">問い合わせ内容が送信されました。近日中に改めてご連絡致します。</string>
+    <string name="dialog_add_review_thanks">ご評価いただきありがとうございます。</string>
+    <string name="dialog_add_review_content">書籍レビューが承認中になっています。承認された後、書籍レビューが表示されます。</string>
+    <string name="dialog_go_to_store">書籍一覧へ</string>
+    <string name="dialog_finger_auth">アプリを使い続けるために認証してください。</string>
+    <string name="dialog_finger_faile">認証が失敗しました。</string>
+    <string name="by_author">作成者:</string>
+
+    //NAVIGATION BUTTON
+    <string name="title_home">KOZUCHI</string>
+    <string name="navigation_home">ホーム</string>
+    <string name="navigation_book_store">電子書籍ストア</string>
+    <string name="navigation_library">ライブラリ</string>
+    <string name="navigation_reading_now">今すぐ読む</string>
+    <string name="navigation_request_book">本の広場</string>
+    <string name="navigation_more">その他</string>
+
+    //DIALOG
+    <string name="dialog_title_failed">エラー</string>
+    <string name="dialog_title_sign_in">サインイン</string>
+    <string name="dialog_title_sign_out">サインアウト</string>
+    <string name="dialog_title_sign_up">サインアップ</string>
+    <string name="dialog_title_sign_confirm_email">Eメール確認</string>
+    <string name="dialog_title_sign_reset_pass">パスワードを再設定する</string>
+    <string name="dialog_loading_content">Loading\.\.\.</string>
+    <string name="dialog_error_network_title">ネットワーク接続なし</string>
+    <string name="dialog_error_network_content">WiFi/3G/4G/5Gをオンにしてご利用を継続してください。</string>
+    <string name="dialog_remove_review">このレビューを削除してもよろしいですか。</string>
+
+    <string name="dialog_purchase_title">この書籍をカートに入れてもよろしいですか。</string>
+    <string name="dialog_not_right_now">いいえ</string>
+    <string name="dialog_purchase_now">今すぐに購入</string>
+
+    //LOGIN
+    <string name="login_button_sign_in">ログイン</string>
+    <string name="login_button_facebook">Facebookでサインイン</string>
+    <string name="login_button_google">Sign in with Google</string>
+    <string name="login_button_line"> LINEでサインイン</string>
+    <string name="login_button_forgot_password"><u>パスワードを忘れた方はこちら</u></string>
+    <string name="login_button_sign_up">サインアップ</string>
+    <string name="login_text_view_note"> アカウントをお持ちではありませんか？</string>
+    <string name="login_text_view_sign_up">サインアップ</string>
+    <string name="login_edit_text_email_placeholder">メールアドレス</string>
+    <string name="login_edit_text_pass_placeholder">パスワード</string>
+    <string name="login_button_skip"><u>スキップ</u></string>
+    <string name="login_edit_text_slogan">書籍読み上げへようこそ！</string>
+    <string name="login_email_error"> 入力した電子メールアドレスは無効です。</string>
+    <string name="login_pass_error"> パスワードは8文字～60文字で入力して下さい。</string>
+
+    //REGISTER
+    <string name="register_text_view_title">アカウント作成</string>
+    <string name="register_text_view_first_name">名前</string>
+    <string name="register_text_view_last_name">苗字</string>
+    <string name="register_text_view_email">メールアドレス</string>
+    <string name="register_text_view_phone">電話番号</string>
+    <string name="register_text_view_address">住所</string>
+    <string name="register_text_view_pass">パスワード</string>
+    <string name="register_text_view_confirm_pass">パスワード確認用</string>
+    <string name="register_text_view_gender">性別</string>
+    <string name="register_text_view_birth_day">生年月日</string>
+    <string name="register_text_view_note">サインアップすると、<b>サービス利用規約及び個人情報保護方針</b>に同意したことになります。</string>
+    <string name="register_text_view_or">または</string>
+    <string name="register_text_view_have_account">すでにアカウントをお持ちですか？</string>
+    <string name="register_text_view_sign_in">サインイン</string>
+    <string name="register_text_pass_confirm_fail">新パスワードと再入力パスワードが一致しません。もう一度やり直してください。</string>
+
+    <string name="register_text_view_complete_title">アカウントの登録完了!</string>
+    <string name="register_text_view_complete_content_1">ご登録いただきありがとうございます。ご登録頂いたメールアドレスに確認メールをお送りしました。</string>
+    <string name="register_text_view_complete_content_2">受信トレイを確認し、確認リンクをクリックしてアカウントをアクティブ化してください。</string>
+
+    <string name="register_button_sign_up">サインアップ</string>
+    <string name="register_button_facebook">Facebookでサインアップ</string>
+    <string name="register_button_google">Sign up with Google</string>
+    <string name="register_button_line"> LINE でサインアップ</string>
+    <string name="register_button_goto_login">お楽しみに！</string>
+
+    <string name="register_radio_female">女性</string>
+    <string name="register_radio_male">男性</string>
+    <string name="register_radio_other">その他</string>
+
+    //FORGOT EMAIL
+    <string name="forgot_email_title">メール確認</string>
+    <string name="forgot_email_email">メールアドレス（必須）</string>
+    <string name="forgot_email_email_place_holder">例: example@gmail.com-EY6</string>
+    <string name="forgot_email_button_confirm">送信</string>
+    <string name="forgot_email_reset_pass">パスワードを再設定する</string>
+    <string name="forgot_email_new_pass">新しいパスワード（必須）</string>
+    <string name="forgot_email_new_pass_place_holder">文字付きの8–60英数字</string>
+    <string name="forgot_email_re_new_pass">新しいパスワードの確認（必須）</string>
+    <string name="forgot_email_re_new_pass_place_holder">パスワード再入力</string>
+    <string name="forgot_email_button_save">セーブ</string>
+    <string name="forgot_email_pass_content_1">あなたのアカウントにメールアドレスの情報がありません。</string>
+    <string name="forgot_email_pass_content_2">アプリを引き続き利用するためにメールアドレスをご入力・ご確認ください。</string>
+    <string name="forgot_pass_thank_you_title">ありがとうございます</string>
+    <string name="forgot_pass_thank_you_content">"パスワードリセットのためにご登録いただいたメールアドレスにて送信されました。受信トレイを確認し、メールの指示に従ってパスワードをリセットしてください。"</string>
+
+    <string name="forgot_pass_confirm_code_title">確認コード</string>
+    <string name="forgot_pass_confirm_code_content">続行するには、メールアドレスで送信した確認コードを入力してください。</string>
+    <string name="forgot_pass_text_view_confirm">確認コード</string>
+    <string name="forgot_pass_confirm_button">確認</string>
+
+    //BOOK STORE
+    <string name="book_store_title">電子書籍ストア</string>
+    <string name="book_store_explore">カテゴリ一覧</string>
+    <string name="book_store_highlight">おすすめの本</string>
+    <string name="book_store_sellers">ベストセラー</string>
+    <string name="book_store_category">カテゴリー</string>
+    <string name="book_store_latest">最新書籍</string>
+    <string name="book_store_book_store">私たちの書店</string>
+    <string name="book_store_more">もっと見る</string>
+
+    //BOOK DETAIL
+    <string name="book_detail_title">書籍の詳細</string>
+    <string name="book_detail_button_sample">試し読み</string>
+    <string name="book_detail_button_read">今すぐ読む</string>
+    <string name="book_detail_button_get_it_now">今すぐ買う</string>
+    <string name="book_detail_button_purchase">ストアで購入</string>
+    <string name="book_detail_tab_view_over_view">概要</string>
+    <string name="book_detail_tab_review">レビュー</string>
+    <string name="book_detail_see_more">もっと見る</string>
+    <string name="book_detail_see_less">閉じる</string>
+    <string name="book_detail_write_review">レビューを書く</string>
+    <string name="book_detail_add_wish_list">Add wish list</string>
+    <string name="book_detail_add_cart">Add shopping cart</string>
+
+    <string name="book_detail_over_view_ISBN">ISBN</string>
+    <string name="book_detail_over_view_related_print_isbn">関連印刷ISBN</string>
+    <string name="book_detail_over_view_description">説明</string>
+    <string name="book_detail_over_view_about_authors">著者について</string>
+    <string name="book_detail_similar_book">関連する本</string>
+    <string name="book_detail_see_all">全て見る</string>
+
+    <string name="about_detail_head">この書籍について</string>
+
+    //LIBRARY
+    <string name="library_tab_my_book">本棚</string>
+    <string name="library_tab_wish_list">ウィッシュリスト</string>
+    <string name="library_tab_book_requests">書籍の要求</string>
+    <string name="library_wish_list_sub_title">お気に入り書籍</string>
+    <string name="library_wish_list_title">購入したい書籍一覧</string>
+    <string name="library_wish_list_empty">ウィッシュリストに追加した本はありません。</string>
+    <string name="library_my_book_empty">まだ本がありません。</string>
+    <string name="library_my_book_button_find_now">今すぐ本を探そう</string>
+    <string name="library_more_read_sub_title">次に読む本</string>
+    <string name="library_more_read_title">次の本をお楽しみいただけます。</string>
+    <string name="library_request_empty">"新書籍リクエストはありますか？プラスアイコンをタップすると、新しいリクエストを送信できます。"</string>
+
+    //MORE
+    <string name="more_general_setting">一般設定</string>
+    <string name="more_edit_profile">プロファイル編集</string>
+    <string name="more_edit_profile_success">アカウントが正常に更新されました。</string>
+    <string name="more_purchase_history">購入履歴</string>
+    <string name="more_my_review">マイレビュー</string>
+    <string name="more_my_book_request">書籍依頼</string>
+    <string name="more_other_setting">他の設定</string>
+    <string name="more_finger_auth">TouchID / FaceIDで認証する</string>
+    <string name="more_setting_auth">認証の設定</string>
+    <string name="more_push_notification">プッシュ通知</string>
+    <string name="more_color_theme"> カラーテーマ</string>
+    <string name="more_about_us">基本情報</string>
+    <string name="more_help">ヘルプ・お問い合わせ</string>
+    <string name="more_version">バージョン1.0.0</string>
+    <string name="more_sign_out">ログアウト</string>
+    <string name="more_change_pass">パスワード変更</string>
+    <string name="more_update">更新</string>
+
+    <string name="gender_male">男性</string>
+    <string name="gender_female">女性</string>
+
+    <string name="my_review_total">合計:</string>
+    <string name="my_review">レビュー</string>
+
+    <string name="theme_light">ライト</string>
+    <string name="theme_dark">ダーク</string>
+    <string name="theme_content_1">カラーテーマの変更は、読書体験に影響を与えません。</string>
+    <string name="theme_content_2">読書中にカラーを変更するには、読んでいる書籍の画面上のツールバーでAaメニューをご選択ください。</string>
+
+    <string name="about_us_overview">概要</string>
+    <string name="about_us_our_document">基本情報</string>
+    <string name="about_term">利用規約</string>
+    <string name="about_privacy">個人情報保護方針</string>
+
+    <string name="help_faqs">よくある質問 </string>
+    <string name="help_contact">お問い合わせ</string>
+
+    <string name="contact_us_name">名前</string>
+    <string name="contact_us_email">Eメール</string>
+    <string name="contact_us_mess">お問い合わせ内容</string>
+    <string name="contact_us_count">0/4000</string>
+    <string name="contact_us_send">送信</string>
+
+    <string name="authen_input_passcode">入力パスコード</string>
+    <string name="authen_pass_code">パスコード認証</string>
+    <string name="authen_finger">指紋認証</string>
+    <string name="authen_face">FaceID認証 / 指紋認証</string>
+
+    //CHANGE PASSWORD
+    <string name="change_pass_current_pass_title">現在のパスワード</string>
+    <string name="change_pass_new_pass_title">新しいパスワード</string>
+    <string name="change_pass_re_new_pass_title">新しいパスワード（確認用）</string>
+
+    //PURCHASE HISTORY
+    <string name="purchase_order_paid">注文詳細</string>
+    <string name="purchase_purchase_on">購入日: </string>
+    <string name="purchase_pay_amount">支払金額: </string>
+    <string name="purchase_pay_by">支払方法: </string>
+    <string name="purchase_read_now">今すぐ読む</string>
+    <string name="purchase_write_review">レビューを書く</string>
+    <string name="purchase_read_review">レビューを見る</string>
+    <string name="purchase_history_empty">現在、購入履歴はありません。</string>
+    <string name="text_view_search">キーワードで検索</string>
+
+    //REVIEW BOOK
+    <string name="review_book_title">書籍レビュー</string>
+    <string name="review_book_rating_null">本のレビューを入力してください。</string>
+    <string name="review_book_place_holder">この書籍についてご感想を自由にご記入ください</string>
+    <string name="review_book_text_view_count">0/500</string>
+    <string name="review_book_button_send_review">送信</string>
+    <string name="review_book_content_title">ご感想（任意）</string>
+    <string name="review_null">レビューがありません。</string>
+
+    //REQUEST BOOK
+    <string name="request_book_title">新しいリクエスト</string>
+    <string name="request_book_book_name">リクエストされた本：</string>
+    <string name="request_book_request_on">リクエスト：</string>
+    <string name="request_book_author">著者：</string>
+    <string name="request_book_status">状態：</string>
+    <string name="request_book_button_view_reply">返信を見る</string>
+    <string name="request_book_button_request">リクエストブック</string>
+    <string name="request_book_new_book_name_title">本のタイトル</string>
+    <string name="request_book_new_book_name_place_holder">本のタイトルを入力</string>
+    <string name="request_book_new_author_title">著者（任意）</string>
+    <string name="request_book_new_author_place_holder">著者をご存知の場合ご入力ください</string>
+    <string name="request_book_new_request_content_title">リクエスト内容</string>
+    <string name="request_book_new_request_content_place_holder">リクエスト書籍について詳細にご入力いただけますとより早急に対応できます</string>
+    <string name="request_book_new_title">新書籍をご希望の場合、下記の情報をご記入ください。</string>
+    <string name="request_book_button_send_request">リクエスト送信</string>
+    <string name="request_book_text_view_count">0/255</string>
+    <string name="request_book_select_max">書籍リクエストで5枚を超える画像をアップロードすることはできません。</string>
+    <string name="request_book_file_size_max">この画像サイズは10MBを超えました。他の画像を試してみてください。</string>
+    <string name="request_book_remove_confirmation">このリクエストを削除してもよろしいですか？</string>
+
+    <string name="request_reply_title">への返信</string>
+    <string name="request_reply_button">返信</string>
+    <string name="request_reply_content">リクエスト内容</string>
+    <string name="request_reply_reply_here">こちらでご返信ください</string>
+
+    //PUSH NOTIFICATION
+    <string name="notifications">通知</string>
+    <string name="push_notification_account_title">アカウント通知</string>
+    <string name="push_notification_account_content">アカウントに関する通知を受け取る。</string>
+    <string name="push_notification_recommendation">おすすめ通知 (Recommendation)</string>
+    <string name="push_notification_recommendation_content">購入したものや読んだ本に基づくおすすめを受け取る。</string>
+
+    //EBOOK READING
+    <string name="reader_spin_pitch">Pitch</string>
+    <string name="reader_spin_speed">Speed</string>
+    <string name="reader_spin_size">Size</string>
+    <string name="reader_button_speak">Speak</string>
+
+    <string name="reading_now_today_title">今読んでいる書籍 </string>
+    <string name="reading_now_today_sub">最終閲覧：</string>
+    <string name="reading_now_sample">試し読み</string>
+    <string name="reading_now_explore">読んだ書籍一覧 </string>
+    <string name="reading_now_explore_title">購入した注目の書籍</string>
+    <string name="reading_now_explore_sub"> おすすめの本</string>
+    <string name="reading_now_find_now">今すぐ本を検索</string>
+    <string name="reading_now_last_read">次に読む本</string>
+    <string name="the_book_have_not_been_purchased_would_you_like_to_read_a_sample_book">書籍が購入されていません。サンプルの書籍を読んでみませんか。</string>
+
+    //SHOPPING CART
+    <string name="shopping_title">確認</string>
+    <string name="shopping_remove_cart">Remove book</string>
+    <string name="shopping_check_all">全て</string>
+    <string name="shopping_empty_cart">全て削除</string>
+    <string name="shoping_total">合計 (税込) </string>
+    <string name="shopping_book_number">数量</string>
+    <string name="shopping_book_item">冊</string>
+    <string name="shopping_next">次に進む</string>
+    <string name="shopping_empty_title">あなたの
+        は空です!</string>
+    <string name="shopping_empty_content">カートにまだ本を追加していません。</string>
+    <string name="shopping_empty_button_find">今すぐ本を探す</string>
+    <string name="shopping_payment_payment_title">クレジットカード決済</string>
+    <string name="shopping_payment_payment_amount">支払金額:</string>
+    <string name="shopping_payment_card_number">カード番号</string>
+    <string name="shopping_payment_expiration_time">有効期限</string>
+    <string name="shopping_payment_name_on_card">カード名義人</string>
+    <string name="shopping_payment_cvv">CVV</string>
+    <string name="shopping_payment_success_title">お支払い完了！</string>
+    <string name="shopping_payment_success_thank_you">ありがとうございます。</string>
+    <string name="shopping_payment_success_content">電子領収書はご登録いただいたメールアドレスに送信されました。購入した本はライブラリで確認してください。</string>
+    <string name="shopping_payment_success_go_to_library">ライブラリへ移動</string>
+    <string name="shopping_payment_confirm">お支払</string>
+    <string name="shopping_payment_cvv_note">カード裏面に3桁のセキュリティコード</string>
+    <string name="shopping_cart_not_available_title">現在、この本は購入できません。</string>
+    <string name="shopping_cart_search_similar"> 同じ本を検索します。</string>
+
+    //FILTER
+    <string name="filter_title">絞り込み</string>
+    <string name="filter_category">カテゴリー</string>
+    <string name="filter_type">種類</string>
+    <string name="filter_type_book">本</string>
+    <string name="filter_type_audio">オーディオブック</string>
+    <string name="filter_publisher">出版社</string>
+    <string name="filter_publisher_apply">適用</string>
+    <string name="filter_price_range">価格</string>
+    <string name="filter_price_min">円（最小）</string>
+    <string name="filter_price_max">円（最大）</string>
+    <string name="filter_button_clear">クリア</string>
+    <string name="filter_button_apply">検索</string>
+    <string name="filter_result_null">結果が見つかりません。</string>
+    <string name="filter_validate_price">価格（最小）は価格（最大）よりも小さく入力する必要があります。</string>
+
+    //SEARCH BOOK
+    <string name="search_title">本を検索</string>
+    <string name="search_my_book_null">結果が見つかりません。</string>
+    <string name="search_place_holder">本、または著者で検索</string>
+
+    //BOOK MARK
+    <string name="bookmark_page">ページ</string>
+    <string name="bookmark_chapter">チャプター</string>
+
+    <string name="reading_voice_reader_title">ボイスリーダーを調整する</string>
+    <string name="reading_voice_notice">* 設定は次の文から適用されます</string>
+    <string name="reading_voice_speed">音声速度</string>
+    <string name="reading_male">男性</string>
+    <string name="reading_voice_type">音声タイプ</string>
+    <string name="reading_female">女性</string>
+    <string name="reading_voice_tone">声調</string>
+    <string name="reading_low">低</string>
+    <string name="reading_high">高い</string>
+    <string name="reading_aa">Aa</string>
+    <string name="reading_continuous_scrolling">連続スクロール</string>
+    <string name="reading_spacing">間隔</string>
+    <string name="alignment">配置</string>
+    <string name="reading_word">語</string>
+    <string name="reading_color">色</string>
+    <string name="reading_alignment">配置</string>
+    <string name="reading_background_color">背景色</string>
+    <string name="reading_text_color">テキストの色</string>
+    <string name="reading_highlight_color">ハイライトカラー</string>
+    <string name="bookmark_note">サンプルがここまで終わりました！</string>
+    <string name="text_no">いいえ</string>
+    <string name="text_yes">はい</string>
+    <string name="reading_original_word">元の言葉 </string>
+    <string name="reading_reading_furigana">読書（ふりがな） </string>
+    <string name="reading_romanji">ローマ字 </string>
+    <string name="reading_delete">削除 </string>
+    <string name="text_done">完了 </string>
+    <string name="content_content">コンテンツ </string>
+    <string name="content_bookmark">ブックマーク</string>
+    <string name="text_delete">削除</string>
+    <string name="reading_enter_word">単語を入力してください</string>
+    <string name="reading_enter_in_furigana">ふりがなに入る </string>
+    <string name="reading_padding">パディング</string>
+    <string name="text_confirm_bookmark">ブックマークを確認する</string>
+    <string name="text_cancel">キャンセル</string>
+    <string name="text_ok">OK</string>
+    <string name="text_confirm_bookmark_hint">ブックマークプレースホルダーの確認</string>
+    <string name="text_bookmark_page">ページ %d</string>
+    <string name="text_chapter">章 %d</string>
+
+    //TUTORIAL
+    <string name="swipe_right_to_left_to_curl_next_page">エッジを右から左にスワイプして、次のページをカールさせます！</string>
+    <string name="swipe_right_to_left_to_curl_previous_page">エッジを右から左にスワイプして、前のページをカールさせます！</string>
+    <string name="swipe_left_to_right_to_curl_next_page">エッジを左から右にスワイプして、次のページをカールさせます！</string>
+    <string name="swipe_left_to_right_to_curl_previous_page">エッジを左から右にスワイプして、前のページをカールさせます！</string>
+    <string name="scroll_from_bottom_to_top_to_read_horizontal_book">下から上にスクロールして、横向きの本を読んでください！</string>
+    <string name="scroll_from_right_to_left_to_read_vertical_book">垂直の本を読むために右から左にスクロールしてください！</string>
+    <string name="tap_the_center">中央をタップしてブックメニューを開きます！</string>
+
+    <string name="review_count">(%d レビュー)</string>
+    <string name="add_to_favourites">お気に入りに追加</string>
+    <string name="delete_from_favourites">ウィッシュリストから削除する</string>
+    <string name="book_purchase">書籍購入</string>
+    <string name="price">価格</string>
+    <string name="book_details">書籍詳細情報</string>
+    <string name="trial_reading">試し読み</string>
+    <string name="buy_at_store">ストアで購入</string>
+    <string name="buy_now">今すぐ買う</string>
+    <string name="book_request_name">リクエスト書籍名：</string>
+    <string name="about_book_purchase">書籍購入について</string>
+    <string name="about_reading_ebook">電子書籍を読むことについて</string>
+</resources>

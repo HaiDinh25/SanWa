@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        style="@style/LinearLayoutVertical"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/layoutEmpty"
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/purchase_history_empty" />
+
+            <TextView
+                android:id="@+id/btnFindBook"
+                style="@style/BookDetailButtonMatchWidth"
+                android:layout_marginStart="@dimen/margin_largest"
+                android:layout_marginTop="@dimen/margin_larger"
+                android:layout_marginEnd="@dimen/margin_largest"
+                android:background="@drawable/bg_button_authentication"
+                android:text="@string/library_my_book_button_find_now"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutData"
+            style="@style/LinearLayoutVertical"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <RelativeLayout
+                android:id="@+id/layoutSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@drawable/bg_edt_search_book"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:elevation="@dimen/elevation_8dp"
+                android:padding="@dimen/padding_small">
+
+                <ImageView
+                    android:id="@+id/btnSearch"
+                    style="@style/ImageViewInSearch"
+                    android:src="@drawable/ic_search" />
+
+                <EditText
+                    android:id="@+id/edtSearchContent"
+                    style="@style/EditTextInSearch"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_toStartOf="@id/btnRemoveContent"
+                    android:layout_toEndOf="@id/btnSearch"
+                    android:hint="@string/text_view_search" />
+
+                <ImageView
+                    android:id="@+id/btnRemoveContent"
+                    style="@style/ImageViewInSearch"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_close" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcPurchaseHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

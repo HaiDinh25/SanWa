@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="foo"
+            type="int" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/btsVoice"
+        style="@style/LayoutMaxSize"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:id="@+id/layoutBtsVoice"
+            style="@style/LinearLayoutVertical"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_background_bottom_sheet"
+            android:elevation="@dimen/elevation_20dp"
+            android:padding="@dimen/dimen_10">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/reading_voice_reader_title"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/gray_e" />
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/reading_voice_notice"
+                android:textColor="@color/gray" />
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/reading_voice_speed" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/margin_small"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_25"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_marginEnd="@dimen/dimen_5"
+                    android:src="@drawable/ic_voice_low" />
+
+                <SeekBar
+                    android:id="@+id/seekBarVoiceSpeed"
+                    style="@style/SeekBar"
+                    android:max="15"/>
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_25"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_marginStart="@dimen/dimen_5"
+                    android:src="@drawable/ic_voice_high" />
+
+            </LinearLayout>
+
+            <include layout="@layout/voice_speed_level"/>
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/reading_voice_type" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupVoiceType"
+                style="@style/TextViewNormalWrapContent"
+                android:layout_marginTop="@dimen/margin_small"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    style="@style/TextViewNormalWrapContent"
+                    android:textColor="@color/colorTextPrimary"
+                    android:checked="true"
+                    android:text="@string/reading_male" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    style="@style/TextViewNormalWrapContent"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:text="@string/reading_female" />
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/reading_voice_tone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/margin_small"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewNormalWrapContent"
+                    android:text="@string/reading_low"
+                    android:layout_width="@dimen/dimen_35"
+                    android:textColor="@color/colorTextPrimary" />
+
+                <SeekBar
+                    android:id="@+id/seekBarVoiceTone"
+                    style="@style/SeekBar"
+                    android:layout_marginHorizontal="0dp"
+                    android:max="9" />
+
+                <TextView
+                    style="@style/TextViewNormalWrapContent"
+                    android:text="@string/reading_high"
+                    android:layout_width="@dimen/dimen_35"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorTextPrimary" />
+
+            </LinearLayout>
+
+            <include layout="@layout/voice_tone_level"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

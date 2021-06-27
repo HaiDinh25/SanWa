@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_large">
+
+        <LinearLayout
+            android:id="@+id/layoutData"
+            style="@style/LinearLayoutHorizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_150"
+                android:layout_gravity="center"
+                app:cardCornerRadius="@dimen/book_corner"
+                app:cardElevation="@dimen/book_corner">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    style="@style/ImageView" />
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_medium">
+
+                <TextView
+                    android:id="@+id/edtTitle"
+                    style="@style/TextViewBoldWrapContent"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/edtAuthor"
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_below="@id/edtTitle"
+                    android:text="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/edtUser"
+                    style="@style/TextViewBoldWrapContent"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/app_name" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            style="@style/View"
+            android:layout_below="@+id/layoutData"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorClickedAnim" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/RatingBarReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/TextViewBoldWrapContent"
+            android:layout_below="@id/ratingBar"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/review_book_content_title" />
+
+        <EditText
+            android:id="@+id/edtReview"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tvContent"
+            android:background="@drawable/bg_edt_sign_in"
+            android:gravity="top"
+            android:hint="@string/review_book_place_holder"
+            android:lines="3"
+            android:maxLength="500"
+            android:padding="@dimen/padding_medium" />
+
+        <TextView
+            android:id="@+id/tvCount"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_below="@id/edtReview"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:hint="@string/review_book_text_view_count"
+            android:padding="@dimen/padding_small" />
+
+        <Button
+            android:id="@+id/btnSendReview"
+            style="@style/AuthenticationButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/bg_button_authentication"
+            android:enabled="true"
+            android:text="@string/review_book_button_send_review" />
+
+    </RelativeLayout>
+
+</layout>

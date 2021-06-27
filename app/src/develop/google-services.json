@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "837373972259",
+    "firebase_url": "https://sanwa-audio-book.firebaseio.com",
+    "project_id": "sanwa-audio-book",
+    "storage_bucket": "sanwa-audio-book.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837373972259:android:91fe10b3a607b37b8d0696",
+        "android_client_info": {
+          "package_name": "com.sanwashoseki.bookskozuchi.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837373972259-5mrgqq1cl1gunmtfnba7f0pjbvlohkv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBov_8GIJqROCgEXjjNkl8RZvGbDjqYDfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837373972259-5mrgqq1cl1gunmtfnba7f0pjbvlohkv5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "837373972259-4u4f43m5l1n78oca4tpqr4tkahn8gj6m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bookskozuchi.ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

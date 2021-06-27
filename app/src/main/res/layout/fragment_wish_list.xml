@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:paddingTop="@dimen/padding_small">
+
+            <LinearLayout
+                android:id="@id/layoutEmpty"
+                style="@style/LinearLayoutVertical"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/TextViewBoldWrapContent"
+                    android:padding="@dimen/padding_small"
+                    android:src="@drawable/ic_wishlist_empty" />
+
+                <TextView
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_marginTop="@dimen/margin_larger"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/library_wish_list_empty" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutData"
+                style="@style/LinearLayoutVertical">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:padding="@dimen/padding_smaller"
+                    android:text="@string/library_wish_list_sub_title"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/TextViewNormalWrapContent"
+                    android:padding="@dimen/padding_smaller"
+                    android:text="@string/library_wish_list_title" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:background="@drawable/bg_edt_search_book"
+                    android:elevation="@dimen/elevation_8dp"
+                    android:padding="@dimen/padding_small">
+
+                    <ImageView
+                        android:id="@+id/btnSearch"
+                        style="@style/ImageViewInSearch"
+                        android:src="@drawable/ic_search" />
+
+                    <EditText
+                        android:id="@+id/edtSearchContent"
+                        style="@style/EditTextInSearch"
+                        android:layout_height="@dimen/dimen_30"
+                        android:layout_toStartOf="@id/btnRemoveContent"
+                        android:layout_toEndOf="@id/btnSearch"
+                        android:hint="@string/search_place_holder" />
+
+                    <ImageView
+                        android:id="@+id/btnRemoveContent"
+                        style="@style/ImageViewInSearch"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_close" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvNull"
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="@string/library_my_book_empty"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcWishList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

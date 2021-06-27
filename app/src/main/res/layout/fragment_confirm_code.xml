@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/container"
+        style="@style/LinearLayoutVertical"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_large"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <TextView
+            style="@style/TextViewBoldWrapContent"
+            android:text="@string/forgot_pass_confirm_code_title"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/TextViewNormalWrapContent"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/forgot_pass_confirm_code_content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AuthenticationTextInPutLayout"
+            android:layout_marginTop="@dimen/margin_large">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCode"
+                style="@style/AuthenticationTextInputEdtText"
+                android:hint="@string/forgot_pass_text_view_confirm"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="6" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSendCode"
+            style="@style/AuthenticationButton"
+            android:layout_marginTop="@dimen/margin_larger"
+            android:text="@string/forgot_pass_confirm_button" />
+
+    </LinearLayout>
+
+</layout>

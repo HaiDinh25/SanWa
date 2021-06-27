@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/layoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_skeleton_conner_medium"
+            android:padding="@dimen/padding_medium" />
+
+        <TextView
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_larger"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_small" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                android:layout_width="@dimen/dimen_200"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_smaller" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@color/colorSkeleton" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                android:layout_width="@dimen/dimen_200"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_smaller" />
+
+        <TextView
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_larger"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_small" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                android:layout_width="@dimen/dimen_200"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_smaller" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@color/colorSkeleton" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                android:layout_width="@dimen/dimen_200"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/bg_skeleton_conner_small"
+            android:padding="@dimen/padding_smaller" />
+
+    </LinearLayout>
+
+</layout>

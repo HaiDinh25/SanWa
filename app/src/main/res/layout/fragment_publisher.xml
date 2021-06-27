@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        style="@style/LinearLayoutVertical"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_medium">
+
+        <RelativeLayout
+            android:id="@+id/layoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt_search_book"
+            android:padding="@dimen/padding_smaller"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_small"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/edtSearchContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/btnRemoveContent"
+                android:layout_toEndOf="@id/btnSearch"
+                android:background="@drawable/bg_edt_password"
+                android:hint="@string/filter_publisher"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:minLines="1" />
+
+            <ImageView
+                android:id="@+id/btnRemoveContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_small"
+                android:src="@drawable/ic_close" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcPublisher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnApply"
+            android:layout_below="@id/layoutSearch"
+            android:layout_marginTop="@dimen/padding_medium" />
+
+        <Button
+            android:id="@+id/btnApply"
+            style="@style/BookDetailButtonMatchWidth"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:background="@drawable/bg_button_inactive"
+            android:enabled="false"
+            android:text="@string/filter_publisher_apply"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</layout>

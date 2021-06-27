@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="foo"
+            type="int" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/btsAdjustCreate"
+        style="@style/LayoutMaxSize"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:id="@+id/layoutBtsAdjustCreate"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_background_bottom_sheet"
+            android:elevation="@dimen/elevation_20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/backCreateButton"
+                    style="@style/ImageInHeaderBottomSheet"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    style="@style/TextViewHeaderInBottomSheet"
+                    android:text="@string/reading_voice_reader_title"/>
+
+                <TextView
+                    android:id="@+id/doneDictionaryButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dimen_10"
+                    android:paddingEnd="@dimen/dimen_10"
+                    android:text="@string/text_done"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/text_size_10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_e" />
+
+            <TextView
+                style="@style/TextBoldInDictionary"
+                android:text="@string/reading_original_word" />
+
+            <LinearLayout
+                style="@style/LayoutSettingDictionary">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:paddingTop="0dp"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/wordDictionaryEditText"
+                        style="@style/EditTextInDictionary"
+                        android:hint="@string/reading_enter_word" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/btnVoiceWord"
+                    style="@style/ImageVoiceInDictionary" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextBoldInDictionary"
+                android:text="@string/reading_reading_furigana" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                style="@style/LayoutSettingDictionary">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:paddingTop="0dp"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/furiganaDictionaryEditText"
+                        style="@style/EditTextInDictionary"
+                        android:hint="@string/reading_enter_in_furigana"
+                        android:imeOptions="actionDone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnVoiceFurigana"
+                    style="@style/ImageVoiceInDictionary" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextBoldInDictionary"
+                android:text="@string/reading_romanji"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/LayoutSettingDictionary"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:paddingTop="0dp"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/romanjiDictionaryEditText"
+                        style="@style/EditTextInDictionary"
+                        android:hint="@string/reading_romanji"
+                        android:imeOptions="actionDone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/btnVoiceRomaji"
+                    style="@style/ImageVoiceInDictionary" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/deleteDictionaryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_10dp_corner"
+                android:backgroundTint="@color/header"
+                android:drawablePadding="5dp"
+                android:elevation="@dimen/elevation_8dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:text="@string/reading_delete"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_12sp"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_reading_delete"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

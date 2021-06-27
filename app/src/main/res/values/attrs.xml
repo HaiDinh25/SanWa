@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FuriganaView">
+        <attr name="android:text" />
+        <attr name="android:maxLines" />
+        <attr name="android:textAlignment" />
+        <attr name="android:lineSpacingExtra" />
+        <attr name="android:layout_marginEnd" />
+        <attr name="android:layout_marginLeft" />
+        <attr name="android:layout_marginRight" />
+        <attr name="android:layout_marginStart" />
+        <attr name="furiganaSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="VerticalTextView">
+        <attr name="text" format="string|reference" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSize" format="dimension|reference" />
+        <attr name="rowSpacing" format="dimension|reference" />
+        <attr name="columnSpacing" format="dimension|reference" />
+        <attr name="columnLength" format="integer" />
+        <attr name="maxColumns" format="integer" />
+        <attr name="atMostHeight" format="boolean" />
+        <attr name="isCharCenter" format="boolean" />
+        <attr name="textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PageCurlView">
+        <!-- Enable/Disable debug mode -->
+        <attr name="enableDebugMode" format="boolean" />
+        <!-- Curl speed  the animation moves in px/frame -->
+        <attr name="curlSpeed" format="integer" />
+        <!-- FPS our animation will run -->
+        <attr name="updateRate" format="integer" />
+        <!-- Pixel offset the page will have from the curl edge -->
+        <attr name="initialEdgeOffset" format="integer" />
+        <!-- The curl mode to apply -->
+        <attr name="curlMode">
+            <enum name="Simple" value="0" />
+            <enum name="Dynamic" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TextViewToggleButton">
+        <attr name="text_button" format="string" />
+        <attr name="is_checked" format="boolean" />
+
+    </declare-styleable>
+
+</resources>

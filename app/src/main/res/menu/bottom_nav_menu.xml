@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_bookstore"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_book_store"
+        android:title="@string/navigation_home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_library"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_library"
+        android:title="@string/navigation_library"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_reading_now"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_reading_now"
+        android:title="@string/navigation_reading_now"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_request_book"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_notification"
+        android:title="@string/navigation_request_book"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_more"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_more"
+        android:title="@string/navigation_more"
+        app:showAsAction="ifRoom" />
+
+</menu>

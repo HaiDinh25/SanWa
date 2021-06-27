@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVertical"
+    android:layout_margin="@dimen/margin_medium">
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/TextViewBoldWrapContent"
+        android:padding="@dimen/padding_smaller" />
+
+</LinearLayout>

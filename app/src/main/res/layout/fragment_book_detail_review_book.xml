@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout style="@style/LinearLayoutVertical">
+
+        <TextView
+            android:id="@+id/tvReviewNull"
+            style="@style/TextViewNormalWrapContent"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/review_null"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/btnReview"
+            style="@style/LinearLayoutHorizontal"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@drawable/bg_btn_review"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_wirte_review" />
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:layout_marginStart="@dimen/margin_large"
+                android:text="@string/book_detail_write_review"
+                android:textColor="@color/colorCircleShoppingCartTint" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</layout>

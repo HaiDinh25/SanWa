@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        style="@style/LinearLayoutVertical"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_medium">
+
+        <LinearLayout
+            style="@style/LinearLayoutVertical">
+
+            <LinearLayout
+                android:id="@+id/layoutCategory"
+                style="@style/LinearLayoutVertical"
+                android:layout_marginBottom="@dimen/margin_large">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:layout_width="@dimen/dimen_200"
+                    android:background="@drawable/bg_skeleton_conner_medium"
+                    android:padding="@dimen/margin_small" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_20"
+                        android:layout_height="@dimen/dimen_20"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_20"
+                        android:layout_height="@dimen/dimen_20"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_20"
+                        android:layout_height="@dimen/dimen_20"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutVertical">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:layout_width="@dimen/dimen_150"
+                    android:background="@drawable/bg_skeleton_conner_small"
+                    android:padding="@dimen/margin_small" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontal"
+                    android:layout_marginTop="@dimen/margin_medium">
+
+                    <TextView
+                        style="@style/BookDetailButtonSplitWidth"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_skeleton_conner_medium" />
+
+
+                    <TextView
+                        style="@style/BookDetailButtonSplitWidth"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:background="@drawable/bg_skeleton_conner_medium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/btnPublisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@drawable/bg_skeleton_conner_medium"
+                android:padding="@dimen/padding_medium" />
+
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_large">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:layout_width="@dimen/dimen_150"
+                    android:background="@drawable/bg_skeleton_conner_small"
+                    android:padding="@dimen/margin_small" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontal"
+                    android:layout_marginTop="@dimen/margin_medium">
+
+                    <TextView
+                        style="@style/BookDetailButtonSplitWidth"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_skeleton_conner_medium" />
+
+
+                    <TextView
+                        style="@style/BookDetailButtonSplitWidth"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:background="@drawable/bg_skeleton_conner_medium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutButton"
+            style="@style/LinearLayoutHorizontal"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/btnClear"
+                style="@style/BookDetailButtonSplitWidth"
+                android:background="@drawable/bg_skeleton_conner_medium" />
+
+            <TextView
+                android:id="@+id/btnApply"
+                style="@style/BookDetailButtonSplitWidth"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:background="@drawable/bg_skeleton_conner_medium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

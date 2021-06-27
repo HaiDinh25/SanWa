@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearLayoutVertical">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:layout_marginTop="@dimen/margin_small">
+
+        <RelativeLayout
+            android:id="@+id/layoutMore"
+            style="@style/LinearLayoutHorizontal">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/TextViewBoldWrapContent"
+                android:layout_width="match_parent"
+                android:layout_toStartOf="@id/btnMore" />
+
+            <TextView
+                android:id="@+id/btnMore"
+                style="@style/BookStoreButtonMore"
+                app:drawableEndCompat="@drawable/ic_view_more" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcBook"
+            style="@style/LinearLayoutHorizontal" />
+
+        <TextView
+            android:id="@+id/tvNull"
+            style="@style/TextViewNormalWrapContent"
+            android:padding="@dimen/padding_small"
+            android:text="@string/library_my_book_empty"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

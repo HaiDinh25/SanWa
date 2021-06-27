@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_30"
+    android:layout_marginEnd="@dimen/dimen_30"
+    android:background="@drawable/shape_10_white"
+    tools:context=".base.SWMainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/authen_input_passcode"
+        android:textColor="@color/colorTextPrimary"
+        android:textStyle="bold" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/edtPassCode"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:padding="@dimen/padding_medium"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_24sp"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="@dimen/margin_large"
+        app:itemWidth="48dp"
+        app:lineColor="@color/colorAccent"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+    <TextView
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_below="@id/edtPassCode"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_large"
+        android:background="@drawable/shape_10dp_corner"
+        android:backgroundTint="@color/colorGrayInactive"
+        android:elevation="@dimen/elevation_8dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_100"
+        android:paddingRight="@dimen/dimen_100"
+        android:text="@string/text_cancel"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+</RelativeLayout>

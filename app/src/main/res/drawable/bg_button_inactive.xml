@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <item tools:ignore="StateListReachable">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/corners_medium"/>
+            <solid android:color="@color/colorGrayInactive" />
+        </shape>
+
+    </item>
+    <item android:state_pressed="true" android:state_selected="true">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/corners_medium"/>
+            <solid android:color="@color/colorAccent" />
+        </shape>
+    </item>
+</selector>

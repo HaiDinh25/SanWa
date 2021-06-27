@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_small"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium">
+
+    <LinearLayout style="@style/LinearLayoutHorizontal">
+
+        <ImageView
+            style="@style/CardView"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_100"
+            android:background="@drawable/bg_skeleton_conner_medium" />
+
+        <RelativeLayout
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_medium">
+
+            <LinearLayout style="@style/LinearLayoutVertical">
+
+                <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        style="@style/TextViewBoldWrapContent"
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/btnDelete"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:id="@+id/btnDelete"
+                        style="@style/TextViewBoldWrapContent"
+                        android:layout_width="@dimen/dimen_20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/bg_skeleton_conner_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_alignParentBottom="true">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/RatingBar"
+                    android:layout_marginTop="@dimen/margin_small" />
+
+                <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_width="match_parent"
+                        android:layout_toStartOf="@id/tvStatus"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_width="@dimen/dimen_50"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/bg_skeleton_conner_small"
+        android:padding="@dimen/padding_smaller" />
+
+</LinearLayout>

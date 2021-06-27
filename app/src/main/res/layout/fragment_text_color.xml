@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dimen_10"
+        android:paddingEnd="@dimen/dimen_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:text="@string/reading_background_color" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewBackgroundColor"
+                style="@style/RecycleViewItemTitle"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnBackgroundColor1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnBackgroundColor2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnBackgroundColor3"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnBackgroundColor4"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:text="@string/reading_text_color" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewTextColor"
+                style="@style/RecycleViewItemTitle"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnTextColor1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnTextColor2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnTextColor3"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnTextColor4"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:text="@string/reading_highlight_color" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewHighlightColor"
+                style="@style/RecycleViewItemTitle"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnHighlightColor1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnHighlightColor2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnHighlightColor3"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+                <com.example.myapplication.utils.TextViewToggleButton
+                    android:id="@+id/btnHighlightColor4"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_uncheck_background" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_medium">
+
+        <RelativeLayout
+            android:id="@+id/rootView"
+            style="@style/LinearLayoutHorizontal">
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_toStartOf="@id/switchAccount">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:text="@string/push_notification_account_title"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/TextViewNormalWrapContent"
+                    android:text="@string/push_notification_account_content" />
+
+            </LinearLayout>
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switchAccount"
+                style="@style/SwitchButtonInSettingAuth" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

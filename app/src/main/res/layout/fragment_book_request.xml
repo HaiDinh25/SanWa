@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rootView"
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:paddingTop="@dimen/margin_medium">
+
+            <RelativeLayout
+                android:id="@+id/layoutSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@drawable/bg_edt_search_book"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:elevation="@dimen/elevation_8dp"
+                android:padding="@dimen/padding_small">
+
+                <ImageView
+                    android:id="@+id/btnSearch"
+                    style="@style/ImageViewInSearch"
+                    android:src="@drawable/ic_search" />
+
+                <EditText
+                    android:id="@+id/edtSearchContent"
+                    style="@style/EditTextInSearch"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_toStartOf="@id/btnRemoveContent"
+                    android:layout_toEndOf="@id/btnSearch"
+                    android:hint="@string/search_title" />
+
+                <ImageView
+                    android:id="@+id/btnRemoveContent"
+                    style="@style/ImageViewInSearch"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_close" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvNull"
+                style="@style/TextViewNormalWrapContent"
+                android:layout_below="@id/layoutSearch"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/library_my_book_empty"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNull" />
+
+            <TextView
+                android:id="@+id/tvPlaceHolder"
+                style="@style/TextViewNormalWrapContent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/margin_medium"
+                android:padding="@dimen/padding_large"
+                android:text="@string/library_request_empty"
+                android:visibility="gone" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnAdd"
+                android:layout_width="@dimen/button_height_large"
+                android:layout_height="@dimen/button_height_large"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/margin_large"
+                app:fabCustomSize="@dimen/dimen_50"
+                app:srcCompat="@drawable/ic_add_request_book" />
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

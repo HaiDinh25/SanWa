@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_marginRight="@dimen/margin_medium"
+    android:background="@drawable/bg_edt_sign_in"
+    android:elevation="@dimen/elevation_8dp"
+    android:padding="@dimen/padding_medium">
+
+    <LinearLayout style="@style/LinearLayoutVertical">
+
+        <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+            <TextView
+                android:id="@+id/tvCode"
+                style="@style/TextViewBoldWrapContent"
+                android:layout_width="match_parent"
+                android:layout_toStartOf="@id/tvOrderPaid"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tvOrderPaid"
+                style="@style/RecycleViewItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/purchase_order_paid"
+                android:textColor="@color/colorTextMore" />
+
+        </RelativeLayout>
+
+        <LinearLayout style="@style/LinearLayoutHorizontal">
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:text="@string/purchase_purchase_on" />
+
+            <TextView
+                android:id="@+id/tvPurchaseOn"
+                style="@style/TextViewBoldWrapContent"
+                android:layout_marginStart="@dimen/margin_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayoutHorizontal">
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:text="@string/purchase_pay_amount" />
+
+            <TextView
+                android:id="@+id/tvPayAmount"
+                style="@style/TextViewBoldWrapContent"
+                android:layout_marginStart="@dimen/margin_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayoutHorizontal">
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:text="@string/purchase_pay_by" />
+
+            <TextView
+                android:id="@+id/tvPayBy"
+                style="@style/TextViewBoldWrapContent"
+                android:layout_marginStart="@dimen/margin_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@color/colorTextBlur" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

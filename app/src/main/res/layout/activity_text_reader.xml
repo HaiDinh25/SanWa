@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/LayoutMaxSize">
+
+        <RelativeLayout
+            style="@style/LayoutMaxSize"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/LayoutMaxSize"
+                android:background="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:id="@+id/layout_root"
+                    style="@style/LayoutMaxSize" />
+
+                <RelativeLayout
+                    android:id="@+id/bookContainer"
+                    style="@style/LayoutMaxSize" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/bt_hide"
+                style="@style/LayoutMaxSize"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/bt_tool_1"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/btnVoice1"
+                    style="@style/ButtonInHeaderReading"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginEnd="44dp"
+                    android:src="@drawable/ic_reading_sound" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/bt_tool_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_alignParentBottom="true" />
+
+            <include
+                android:id="@+id/toolbarReadingByEye"
+                layout="@layout/layout_toolbar_reading_by_eye"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/bottomToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:elevation="@dimen/elevation_16dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/progressTextView"
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_margin="@dimen/dimen_10" />
+
+                <SeekBar
+                    android:id="@+id/progressSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include layout="@layout/tutorial" />
+
+        <include
+            layout="@layout/bottom_sheet_voice_reader"
+            app:foo="@{1}" />
+
+        <include
+            layout="@layout/bottom_sheet_text_size"
+            app:foo="@{2}" />
+
+        <include
+            layout="@layout/bottom_sheet_adjust_reading_create"
+            app:foo="@{2}" />
+
+        <include
+            layout="@layout/bottom_sheet_adjust_reading_list"
+            app:foo="@{2}" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</layout>
+
+

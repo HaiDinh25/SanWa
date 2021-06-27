@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        style="@style/LinearLayoutHorizontal"
+        android:background="@drawable/bg_border_dialog"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextViewBoldWrapContent"
+            android:padding="@dimen/padding_small" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_below="@id/tvTitle"
+            android:padding="@dimen/padding_small" />
+
+        <TextView
+            android:id="@+id/btnConfirm"
+            style="@style/TextViewBoldWrapContent"
+            android:layout_below="@id/tvContent"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/padding_medium"
+            android:paddingStart="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
+            android:text="OK"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+</layout>

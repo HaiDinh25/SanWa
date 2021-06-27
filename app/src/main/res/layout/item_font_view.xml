@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/LayoutMaxSize"
+            android:layout_margin="@dimen/margin_medium"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFontPreview"
+                android:layout_width="@dimen/dimen_72"
+                android:layout_height="@dimen/dimen_72"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/circle_white"
+                android:gravity="center"
+                android:text="日本"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size_24sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvFontName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_small"
+                android:text="Roboto"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

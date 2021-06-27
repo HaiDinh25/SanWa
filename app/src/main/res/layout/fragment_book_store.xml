@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/rootView"
+                style="@style/LinearLayoutVertical">
+
+                <LinearLayout
+                    style="@style/LinearLayoutVertical"
+                    android:background="@color/colorPrimary"
+                    tools:context=".business.ebookstore.views.SWBookStoreFragment">
+
+                    <LinearLayout
+                        style="@style/LinearLayoutVertical"
+                        android:layout_marginTop="@dimen/margin_medium">
+
+                        <TextView
+                            style="@style/TextViewBoldWrapContent"
+                            android:layout_marginStart="@dimen/margin_medium"
+                            android:text="@string/book_store_explore" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcCategories"
+                            style="@style/LinearLayoutHorizontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayoutVertical"
+                        android:layout_marginTop="@dimen/margin_medium">
+
+                        <RelativeLayout
+                            style="@style/LinearLayoutHorizontal"
+                            android:layout_marginStart="@dimen/margin_medium"
+                            android:layout_marginEnd="@dimen/margin_medium">
+
+                            <TextView
+                                style="@style/TextViewBoldWrapContent"
+                                android:layout_width="match_parent"
+                                android:layout_toStartOf="@id/btnMoreHighlight"
+                                android:text="@string/book_store_highlight" />
+
+                            <TextView
+                                android:id="@+id/btnMoreHighlight"
+                                style="@style/BookStoreButtonMore"
+                                app:drawableEndCompat="@drawable/ic_view_more" />
+
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcHighlight"
+                            style="@style/LinearLayoutHorizontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayoutVertical"
+                        android:layout_marginTop="@dimen/margin_medium">
+
+                        <RelativeLayout
+                            style="@style/LinearLayoutHorizontal"
+                            android:layout_marginStart="@dimen/margin_medium"
+                            android:layout_marginEnd="@dimen/margin_medium">
+
+                            <TextView
+                                style="@style/TextViewBoldWrapContent"
+                                android:layout_width="match_parent"
+                                android:layout_toStartOf="@id/btnMoreSellers"
+                                android:text="@string/book_store_sellers" />
+
+                            <TextView
+                                android:id="@+id/btnMoreSellers"
+                                style="@style/BookStoreButtonMore"
+                                android:textStyle="normal"
+                                app:drawableEndCompat="@drawable/ic_view_more" />
+
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcSellers"
+                            style="@style/LinearLayoutHorizontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayoutVertical"
+                        android:layout_marginTop="@dimen/margin_medium">
+
+                        <RelativeLayout
+                            style="@style/LinearLayoutHorizontal"
+                            android:layout_marginStart="@dimen/margin_medium"
+                            android:layout_marginEnd="@dimen/margin_medium">
+
+                            <TextView
+                                style="@style/TextViewBoldWrapContent"
+                                android:layout_width="match_parent"
+                                android:layout_toStartOf="@id/btnMoreLatest"
+                                android:text="@string/book_store_latest" />
+
+                            <TextView
+                                android:id="@+id/btnMoreLatest"
+                                style="@style/BookStoreButtonMore"
+                                android:textStyle="normal"
+                                app:drawableEndCompat="@drawable/ic_view_more" />
+
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcLatest"
+                            style="@style/LinearLayoutHorizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

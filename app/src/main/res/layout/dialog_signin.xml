@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        style="@style/LinearLayoutHorizontal"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:background="@drawable/shape_10_white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextViewBoldWrapContent" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="@dimen/margin_medium" />
+
+        <LinearLayout
+            style="@style/LinearLayoutHorizontal"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_below="@id/tvContent"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                style="@style/ButtonInDialog"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/bg_edt_sign_in"
+                android:text="@string/text_cancel"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnConfirm"
+                style="@style/ButtonInDialog"
+                android:background="@drawable/bg_button_red_border"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/text_ok"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

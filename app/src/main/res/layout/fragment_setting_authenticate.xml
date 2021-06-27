@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_medium">
+
+        <RelativeLayout
+            android:id="@+id/layoutPassCode"
+            style="@style/LinearLayoutHorizontal"
+            android:layout_marginTop="@dimen/margin_small">
+
+            <TextView
+                style="@style/TextViewInSettingAuth"
+                android:text="@string/authen_pass_code" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switchPassCode"
+                style="@style/SwitchButtonInSettingAuth"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutBiometricAuth"
+            style="@style/LinearLayoutHorizontal"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                style="@style/TextViewInSettingAuth"
+                android:text="@string/authen_face" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switchBiometricAuth"
+                style="@style/SwitchButtonInSettingAuth" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/biometricAuthenDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Your device haven't a touchId or FaceID, please setup at least one biometric authentication method in your device setting"/>
+
+    </LinearLayout>
+
+</layout>

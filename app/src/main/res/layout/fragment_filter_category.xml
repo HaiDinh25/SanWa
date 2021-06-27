@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_medium">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcSubCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnApply" />
+
+        <Button
+            android:id="@+id/btnApply"
+            style="@style/BookDetailButtonMatchWidth"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:background="@drawable/bg_button_red_background"
+            android:enabled="true"
+            android:text="@string/filter_button_apply"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</layout>

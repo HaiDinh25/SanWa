@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_small">
+
+    <LinearLayout
+        style="@style/LinearLayoutHorizontal"
+        android:clipChildren="false">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardView"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_margin="@dimen/margin_medium"
+            app:cardCornerRadius="@dimen/book_corner"
+            app:cardElevation="@dimen/book_corner">
+
+            <ImageView
+                android:id="@+id/imageView"
+                style="@style/ImageView" />
+
+            <ImageView
+                android:id="@+id/icListener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:src="@drawable/ic_listener"
+                android:visibility="gone" />
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_medium">
+
+            <LinearLayout style="@style/LinearLayoutVertical">
+
+                <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        style="@style/TextViewBoldWrapContent"
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/btnDelete"
+                        android:ellipsize="end"
+                        android:maxLines="2" />
+
+                    <ImageView
+                        android:id="@+id/btnDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:padding="@dimen/padding_small"
+                        android:src="@drawable/ic_remove_review"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    style="@style/TextViewNormalWrapContent"
+                    android:ellipsize="end"
+                    android:maxLines="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_alignParentBottom="true">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/RatingBar"
+                    android:layout_marginTop="@dimen/margin_small" />
+
+                <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_width="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:textColor="@color/colorSigningBackground" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_smaller"
+        android:textColor="@color/colorTextPrimary" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/colorRatioHint" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVertical"
+    android:layout_marginStart="@dimen/margin_largest"
+    android:layout_marginEnd="@dimen/margin_largest"
+    android:background="@drawable/bg_border_dialog"
+    android:padding="@dimen/margin_medium">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TextViewBoldWrapContent"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_small"
+        android:text="Author" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small" />
+
+    <TextView
+        android:id="@+id/btnOK"
+        style="@style/TextViewBoldWrapContent"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:padding="@dimen/padding_small"
+        android:text="OK"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

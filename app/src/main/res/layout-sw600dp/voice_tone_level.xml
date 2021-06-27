@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/SeekBarValue"
+        android:text="0.2"/>
+    <TextView
+        style="@style/SeekBarValue"
+        
+        android:text="0.4"/>
+    <TextView
+        style="@style/SeekBarValue"
+        
+        android:text="0.6"/>
+    <TextView
+        style="@style/SeekBarValue"
+        
+        android:text="0.8"/>
+    <TextView
+        style="@style/SeekBarValue"
+        
+        android:text="1"/>
+    <TextView
+        style="@style/SeekBarValue"
+        
+        android:text="1.2"/>
+    <TextView
+        style="@style/SeekBarValue"
+        
+        android:text="1.4"/>
+    <TextView
+        style="@style/SeekBarValue"
+        
+        android:text="1.6"/>
+    <TextView
+        style="@style/SeekBarValue"
+        
+        android:text="1.8"/>
+    <TextView
+        style="@style/SeekBarValue"
+        
+        android:text="2"/>
+
+</LinearLayout>

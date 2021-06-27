@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bookDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/book_details"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:columnCount="2"
+            android:rowCount="5">
+
+            <TextView
+                android:id="@+id/bookTypeKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type:"/>
+
+            <TextView
+                android:id="@+id/bookTypeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"/>
+
+            <TextView
+                android:id="@+id/bookLanguageKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language:"/>
+
+            <TextView
+                android:id="@+id/bookLanguageValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Japanese"/>
+
+            <TextView
+                android:id="@+id/bookPublicationKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publication date:"/>
+
+            <TextView
+                android:id="@+id/bookPublicationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020/12/17"/>
+
+            <TextView
+                android:id="@+id/bookPageKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book:"/>
+
+            <TextView
+                android:id="@+id/bookPageValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Page 274"/>
+
+            <TextView
+                android:id="@+id/bookSizeKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size:"/>
+
+            <TextView
+                android:id="@+id/bookSizeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="512KB:"/>
+        </GridLayout>
+    </LinearLayout>
+</layout>

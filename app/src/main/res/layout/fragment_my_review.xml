@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/layoutEmpty"
+                style="@style/LinearLayoutVertical"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/LinearLayoutVertical"
+                    android:src="@drawable/ic_my_review" />
+
+                <TextView
+                    android:id="@+id/btnFindNow"
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_large"
+                    android:background="@drawable/bg_button_red_border"
+                    android:padding="@dimen/padding_medium"
+                    android:paddingStart="@dimen/padding_larger"
+                    android:paddingEnd="@dimen/padding_larger"
+                    android:text="@string/library_my_book_button_find_now"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutData"
+                style="@style/LinearLayoutVertical">
+
+                <TextView
+                    android:id="@+id/tvNumReview"
+                    style="@style/TextViewNormalWrapContent"
+                    android:padding="@dimen/padding_medium" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcMyReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

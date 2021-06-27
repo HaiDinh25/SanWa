@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/container"
+        style="@style/LinearLayoutVertical"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_large"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <TextView
+            style="@style/TextViewBoldWrapContent"
+            android:text="@string/forgot_email_title"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/TextViewNormalWrapContent"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/forgot_email_pass_content_1"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/TextViewNormalWrapContent"
+            android:text="@string/forgot_email_pass_content_2"
+            android:visibility="gone" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AuthenticationTextInPutLayout"
+            android:layout_marginTop="@dimen/margin_large">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmail"
+                style="@style/AuthenticationTextInputEdtText"
+                android:hint="@string/forgot_email_email"
+                android:imeOptions="actionDone"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSendEmail"
+            style="@style/AuthenticationButton"
+            android:layout_marginTop="@dimen/margin_larger"
+            android:text="@string/forgot_email_button_confirm" />
+
+    </LinearLayout>
+
+</layout>

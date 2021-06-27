@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout style="@style/LinearLayoutVertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/rootView"
+                style="@style/LinearLayoutVertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutSample"
+                    style="@style/LinearLayoutVertical"
+                    android:padding="@dimen/padding_small">
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:text="@string/reading_now_today_title" />
+
+                    <TextView
+                        style="@style/TextViewNormalWrapContent"
+                        android:text="@string/the_book_have_not_been_purchased_would_you_like_to_read_a_sample_book" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_250">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView"
+                            android:layout_width="@dimen/dimen_180"
+                            android:layout_height="@dimen/dimen_250"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:cardCornerRadius="@dimen/book_corner"
+                            app:cardElevation="@dimen/book_corner">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                style="@style/ImageView" />
+
+                            <ImageView
+                                android:id="@+id/icListener"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:layout_marginEnd="@dimen/margin_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:src="@drawable/ic_listener" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <RelativeLayout
+                            style="@style/LinearLayoutVertical"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:layout_toEndOf="@id/cardView">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                style="@style/TextViewBoldWrapContent" />
+
+                            <TextView
+                                android:id="@+id/tvDescription"
+                                style="@style/TextViewNormalWrapContent"
+                                android:layout_below="@id/tvName" />
+
+                            <TextView
+                                android:id="@+id/tvVendor"
+                                style="@style/TextViewNormalWrapContent"
+                                android:layout_below="@id/tvDescription" />
+
+                            <LinearLayout
+                                android:id="@+id/btnSample"
+                                style="@style/BookDetailButtonMatchWidth"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_marginEnd="@dimen/margin_large">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_book_detail_sample" />
+
+                                <TextView
+                                    style="@style/TextViewBoldWrapContent"
+                                    android:layout_marginStart="@dimen/margin_large"
+                                    android:text="@string/reading_now_sample"
+                                    android:textColor="@color/colorHint" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutRead"
+                    style="@style/LinearLayoutVertical"
+                    android:padding="@dimen/padding_small"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:text="@string/reading_now_today_title" />
+
+                    <TextView
+                        android:id="@+id/tvLastRead"
+                        style="@style/TextViewNormalWrapContent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/dimen_150"
+                            android:layout_height="@dimen/dimen_200"
+                            android:layout_margin="@dimen/margin_medium"
+                            app:cardCornerRadius="@dimen/corners_medium"
+                            app:cardElevation="@dimen/corners_medium">
+
+                            <ImageView
+                                android:id="@+id/imageViewRead"
+                                style="@style/ImageView" />
+
+                            <ImageView
+                                android:id="@+id/icListenerRead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:layout_marginEnd="@dimen/margin_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:src="@drawable/ic_listener" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tvNameReading"
+                            style="@style/TextViewBoldWrapContent" />
+
+                        <TextView
+                            android:id="@+id/tvDescriptionReading"
+                            style="@style/TextViewNormalWrapContent" />
+
+                        <TextView
+                            android:id="@+id/tvVendorReading"
+                            style="@style/TextViewNormalWrapContent" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/View" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_small">
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="@string/reading_now_explore" />
+
+                    <TextView
+                        style="@style/TextViewNormalWrapContent"
+                        android:text="@string/reading_now_explore_title" />
+
+                    <ImageView
+                        android:id="@+id/imageNullBook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_my_book_empty"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcExplore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnFindNow"
+                    style="@style/AuthenticationButton"
+                    android:layout_marginStart="@dimen/dimen_100"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginEnd="@dimen/dimen_100"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:background="@drawable/bg_button_red_border"
+                    android:elevation="@dimen/elevation_16dp"
+                    android:enabled="true"
+                    android:text="@string/reading_now_find_now"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

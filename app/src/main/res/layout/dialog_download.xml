@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVertical"
+    android:layout_marginStart="@dimen/margin_largest"
+    android:layout_marginEnd="@dimen/margin_largest"
+    android:background="@drawable/bg_border_dialog"
+    android:padding="@dimen/margin_medium">
+
+    <RelativeLayout
+        android:id="@+id/layoutDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

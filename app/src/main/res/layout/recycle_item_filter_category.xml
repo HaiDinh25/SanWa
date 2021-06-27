@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVertical">
+
+    <RelativeLayout
+        android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@style/CheckBox"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/layoutCategory"
+            style="@style/LinearLayoutVertical"
+            android:layout_toEndOf="@id/checkBox">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                style="@style/MoreTextViewMenuTitle"
+                android:layout_marginStart="0dp"
+                android:padding="@dimen/padding_small"
+                android:textColor="@color/colorHint" />
+
+            <TextView
+                android:id="@+id/tvCategoryEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:visibility="gone"
+                android:padding="@dimen/padding_small"
+                android:textColor="@color/colorHint" />
+
+            <TextView
+                android:id="@+id/tvSubCategory"
+                style="@style/TextViewNormalWrapContent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_small"
+                android:textColor="@color/colorCircleTint"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View style="@style/View" />
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_medium">
+
+        <LinearLayout
+            android:id="@+id/layoutData"
+            style="@style/LinearLayoutVertical"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnSend">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:padding="@dimen/padding_small"
+                android:text="@string/contact_us_name" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/TextViewNormalWrapContent"
+                android:padding="@dimen/padding_small"
+                android:textColor="@color/colorTextPrimary" />
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/EditTextInContact"
+                android:maxLength="200"
+                android:nextFocusDown="@id/edtEmail"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvErrorName"
+                style="@style/TextViewError"
+                android:text="@string/text_required"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:padding="@dimen/padding_small"
+                android:text="@string/contact_us_email" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/TextViewNormalWrapContent"
+                android:padding="@dimen/padding_small"
+                android:textColor="@color/colorTextPrimary" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/EditTextInContact"
+                android:maxLength="200"
+                android:maxLines="1"
+                android:nextFocusDown="@id/edtMessage"
+                android:visibility="gone"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/tvErrorEmail"
+                style="@style/TextViewError"
+                android:text="@string/text_required"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:padding="@dimen/padding_small"
+                android:text="@string/contact_us_mess" />
+
+            <EditText
+                android:id="@+id/edtMessage"
+                style="@style/EditTextInContact"
+                android:imeOptions="actionDone"
+                android:maxLength="4000"
+                android:maxLines="8" />
+
+            <TextView
+                android:id="@+id/tvErrorMessage"
+                style="@style/TextViewError"
+                android:text="@string/text_required"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvCount"
+                style="@style/TextViewNormalWrapContent"
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:padding="@dimen/padding_small"
+                android:text="@string/contact_us_count" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSend"
+            style="@style/AuthenticationButton"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_button_authentication"
+            android:enabled="true"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/contact_us_send"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</layout>

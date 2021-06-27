@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:background="@drawable/shape_10dp_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/title_confirm"
+            style="@style/TextViewBoldWrapContent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/dialog_confirm"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayInactive" />
+
+        <TextView
+            android:id="@+id/content_confirm"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/text_confirm_bookmark"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <EditText
+            android:id="@+id/et_confirm_bookmark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="@drawable/bg_border_edt_5dp"
+            android:hint="@string/text_confirm_bookmark_hint"
+            android:padding="@dimen/padding_medium"
+            android:singleLine="true"
+            android:textColor="@color/colorTextPrimary"
+            android:textColorHint="@color/colorTextPrimary"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnNegative"
+                style="@style/ButtonInDialog"
+                android:backgroundTint="#C2C2C2"
+                android:text="@string/text_cancel"
+                android:textColor="@color/colorTextPrimary" />
+
+            <TextView
+                android:id="@+id/btnPositive"
+                style="@style/ButtonInDialog"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/text_ok"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

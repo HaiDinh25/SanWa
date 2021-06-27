@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/margin_medium">
+
+    <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            style="@style/LinearLayoutVertical"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_toEndOf="@id/progressBar">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextViewBoldWrapContent"
+                android:padding="@dimen/padding_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_small" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/bottomToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/reading_aa"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <SeekBar
+                    android:id="@+id/seekBarTextSize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:max="10"
+                    android:min="1"
+                    android:progress="1"
+                    android:progressBackgroundTint="@color/colorIcon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/reading_aa"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/gray_e" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/TextViewBoldWrapContent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/reading_spacing" />
+
+                <ImageView
+                    android:id="@+id/btnSpacingSmall"
+                    style="@style/ImageInConfigText"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_reading_spacing_1_select" />
+
+                <ImageView
+                    android:id="@+id/btnSpacingNormal"
+                    style="@style/ImageInConfigText"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_reading_spacing_2" />
+
+                <ImageView
+                    android:id="@+id/btnSpacingLager"
+                    style="@style/ImageInConfigText"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_reading_spacing_3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/reading_padding" />
+
+                <ImageView
+                    android:id="@+id/btnPaddingSmall"
+                    style="@style/ImageInConfigText"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_settings_padding_narrow_selected" />
+
+                <ImageView
+                    android:id="@+id/btnPaddingNormal"
+                    style="@style/ImageInConfigText"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_settings_padding_normal" />
+
+                <ImageView
+                    android:id="@+id/btnPaddingLager"
+                    style="@style/ImageInConfigText"
+                    android:src="@drawable/ic_settings_padding_large" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

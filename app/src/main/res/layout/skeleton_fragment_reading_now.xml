@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_medium">
+
+        <LinearLayout
+            android:id="@+id/layoutSample"
+            style="@style/LinearLayoutVertical">
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_width="@dimen/dimen_150"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:layout_width="@dimen/dimen_200"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+            <LinearLayout
+                style="@style/LinearLayoutHorizontal"
+                android:layout_marginTop="@dimen/margin_large">
+
+                <TextView
+                    android:id="@+id/cardView"
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="@dimen/dimen_150"
+                    android:background="@drawable/bg_skeleton_conner_medium" />
+
+                <RelativeLayout
+                    style="@style/LinearLayoutVertical"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_medium">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="@dimen/dimen_200"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvName"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:id="@+id/tvVendor"
+                        android:layout_width="@dimen/dimen_150"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvDescription"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:id="@+id/btnSample"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/bg_skeleton_conner_medium"
+                        android:padding="@dimen/padding_medium" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/View"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/colorSkeleton" />
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:layout_width="@dimen/dimen_200"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_small" />
+
+            <LinearLayout
+                style="@style/LinearLayoutHorizontal"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <LinearLayout
+                    style="@style/LinearLayoutVertical"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_medium">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_150"
+                        android:background="@drawable/bg_skeleton_conner_medium" />
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_150"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayoutVertical"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_medium">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_150"
+                        android:background="@drawable/bg_skeleton_conner_medium" />
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_150"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnFindNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_largest"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_largest"
+                android:background="@drawable/bg_skeleton_conner_medium"
+                android:padding="@dimen/padding_medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVertical"
+    android:padding="@dimen/padding_medium">
+
+    <LinearLayout style="@style/LinearLayoutHorizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="@dimen/button_height_medium"
+            android:layout_height="@dimen/button_height_medium"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_not_login_border" />
+
+        <LinearLayout
+            style="@style/LinearLayoutVertical"
+            android:padding="@dimen/padding_small">
+
+            <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+                <LinearLayout
+                    style="@style/LinearLayoutVertical"
+                    android:layout_toStartOf="@id/btnDelete">
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        style="@style/TextViewBoldWrapContent" />
+
+                    <TextView
+                        android:id="@+id/tvUserEmail"
+                        style="@style/TextViewNormalWrapContent" />
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        style="@style/TextViewNormalWrapContent" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btnDelete"
+                    style="@style/ImageViewInSearch"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_delete_black"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRequestTitle"
+        style="@style/TextViewBoldWrapContent" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        style="@style/TextViewNormalWrapContent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcImage"
+        style="@style/LinearLayoutHorizontal"
+        android:layout_marginTop="@dimen/margin_medium" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        style="@style/TextViewNormalWrapContent"
+        android:layout_marginTop="@dimen/margin_medium" />
+
+    <LinearLayout
+        android:id="@+id/layoutReply"
+        style="@style/LinearLayoutHorizontal"
+        android:layout_marginTop="@dimen/margin_medium">
+
+        <ImageView
+            android:id="@+id/btnReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_message_rep" />
+
+        <TextView
+            android:id="@+id/tvNumRep"
+            style="@style/TextViewNormalWrapContent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:textColor="@color/colorTextMore" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/TextViewBoldWrapContent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_large"
+            android:background="@drawable/bg_text_view_status_approved"
+            android:padding="@dimen/padding_small"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNote"
+        style="@style/TextViewNormalWrapContent"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/colorRatioHint" />
+
+</LinearLayout>

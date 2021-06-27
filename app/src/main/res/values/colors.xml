@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#D42A1C</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorAccentDimmed">#AAAAAA</color>
+
+    <color name="colorTextPrimary">#000000</color>
+    <color name="colorTextBlur">#999999</color>
+    <color name="colorBorderSortTopSeller">#FFFFFF</color>
+    <color name="colorClickedAnim">#999999</color>
+    <color name="colorHint">#777777</color>
+    <color name="colorIcon">#303030</color>
+    <color name="colorGrayInactive">#CECECE</color>
+    <color name="colorCircleTint">#0DBED2</color>
+    <color name="colorCircleShoppingCartTint">#FC9801</color>
+    <color name="colorTextMore">#359F08</color>
+    <color name="colorNavigationTint">#999999</color>
+    <color name="colorBorderButtonEmptyCart">#777777</color>
+    <color name="colorRatioHint">#A1CDC9C9</color>
+    <color name="colorNotAvailable">#FAF2F1</color>
+    <color name="colorStatusPendingApprove">#0DBED2</color>
+    <color name="colorSearchBorder">#CECECE</color>
+    <color name="colorSkeleton">#16000000</color>
+
+    <color name="colorSigningBackground">#e69138</color>
+    <color name="colorFacebookBackGround">#3467A6</color>
+    <color name="colorGoogleBackGround">#ff3425</color>
+    <color name="colorLineBackGround">#00C01A</color>
+    <color name="colorStatusBar">#CECECE</color>
+
+
+    <color name="main_blue">#2A8282</color>
+    <color name="main_gray">#C2C2C2</color>
+    <color name="main_orange">#CE8B64</color>
+    <color name="main_orange_alpha_10">#1ACE8B64</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay_20">#33000000</color>
+    <color name="black_opacity_0_05">#0D000000</color>
+    <color name="selected_yellow">#33FFA800</color>
+    <color name="black">#000000</color>
+    <color name="near_black">#434040</color>
+    <color name="green">#43A047</color>
+
+    <color name="blue">#0085FF</color>
+    <color name="white">#ffffff</color>
+    <color name="white50">#80ffffff</color>
+    <color name="bg_blue_">#EBEFF6</color>
+    <color name="blue_header">#3B62A0</color>
+    <color name="break_line">#FCFCFC</color>
+    <color name="orange">#FC9801</color>
+    <color name="blue_text_app_name_login">#5CE2BD</color>
+    <color name="red">#E53935</color>
+    <color name="gray">#808080</color>
+    <color name="gray_light">#E4E3E3</color>
+    <color name="colorText">#434040</color>
+
+    <color name="color_uncheck">#FCF2DF</color>
+
+    <color name="windowBackground">#1C1C1C</color>
+    <color name="colorButtonNormal">#FFFFFB</color>
+    <color name="textColorPrimary">#FFFFFB</color>
+    <color name="textColorPrimaryInverse">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="divider">#333333</color>
+    <color name="gray_bg_title_ar_preview_30">#4D3B62A0</color>
+    <color name="gray_bg_btn_ar_preview">#33FFFFFF</color>
+
+    <color name="textBlue">#5298DC</color>
+    <color name="textBlue2">#3B62A0</color>
+    <color name="textGray">#9591ae</color>
+    <color name="textSearch">#3B62A0</color>
+
+    <color name="header">#D42A1C</color>
+    <color name="header_alpha_50">#80CE8B64</color>
+    <color name="header_alpha_10">#1ACE8B64</color>
+
+    <color name="greenText">#588B8B</color>
+    <color name="green_background">#2A8282</color>
+    <color name="searchHint">#AAAAAA</color>
+
+    <color name="gray_line">#CECECE</color>
+
+
+    <color name="bg_capture_screen_preview">#FFA800</color>
+
+    <color name="green_show_more">#12B090</color>
+
+    <color name="defaultMoreColor">#ff4081</color>
+    <color name="transparentWhite">#00ffffff</color>
+
+    <color name="gray_e">#E4E4E4</color>
+    <color name="default_indicator_color_selected">#EEEEEE</color>
+    <color name="default_indicator_color_unselected">#66eeeeee</color>
+
+    <color name="multiple_image_select_primary">#2E7D32</color>
+    <color name="multiple_image_select_primaryDark">#1B5E20</color>
+    <color name="multiple_image_select_primaryLight">#C8E6C9</color>
+    <color name="multiple_image_select_accent">#4CAF50</color>
+
+    <color name="multiple_image_select_primaryText">#212121</color>
+    <color name="multiple_image_select_secondaryText">#727272</color>
+    <color name="multiple_image_select_divider">#B6B6B6</color>
+
+    <color name="multiple_image_select_toolbarPrimaryText">#FFFFFF</color>
+
+    <color name="multiple_image_select_albumTextBackground">#99000000</color>
+    <color name="multiple_image_select_imageSelectBackground">#000000</color>
+
+    <color name="multiple_image_select_buttonText">#FFFFFF</color>
+    <color name="black50">#80000000</color>
+    <color name="yellow_button">#FFA800</color>
+
+    <color name="order_yellow">#FFA800</color>
+    <color name="order_red">#CE6464</color>
+    <color name="order_green">#12B090</color>
+    <color name="order_light_blue">#00CCE8</color>
+    <color name="order_blue">#5899FF</color>
+    <color name="order_status_waiting">#CCCCCC</color>
+    <color name="gray_text">#707070</color>
+
+    <color name="tutorial_text">#FFFFFF</color>
+    <color name="tutorial_background">#C6737373</color>
+    <color name="book_detail_divider">#757575</color>
+</resources>

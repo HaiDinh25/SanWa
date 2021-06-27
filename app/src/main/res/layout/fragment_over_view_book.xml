@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/LinearLayoutVertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/LinearLayoutVertical">
+
+            <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:padding="@dimen/padding_medium"
+                    android:text="@string/book_detail_over_view_ISBN" />
+
+                <TextView
+                    android:id="@+id/tvISBN"
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/padding_medium" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/LinearLayoutHorizontal">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:padding="@dimen/padding_medium"
+                    android:text="@string/book_detail_over_view_related_print_isbn" />
+
+                <TextView
+                    android:id="@+id/tvRlatedISBN"
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/padding_medium" />
+
+            </RelativeLayout>
+
+            <LinearLayout style="@style/LinearLayoutVertical">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:padding="@dimen/padding_medium"
+                    android:text="@string/book_detail_over_view_description" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    style="@style/TextViewNormalWrapContent"
+                    android:ellipsize="end"
+                    android:padding="@dimen/padding_medium" />
+
+                <TextView
+                    android:id="@+id/btnSeeMoreDescription"
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/book_detail_see_more"
+                    android:textColor="@color/colorCircleTint" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutVertical">
+
+                <TextView
+                    style="@style/TextViewBoldWrapContent"
+                    android:padding="@dimen/padding_medium"
+                    android:text="@string/book_detail_over_view_about_authors" />
+
+                <TextView
+                    android:id="@+id/tvAboutAuthors"
+                    style="@style/TextViewNormalWrapContent"
+                    android:ellipsize="end"
+                    android:padding="@dimen/padding_medium" />
+
+                <TextView
+                    android:id="@+id/btnSeeMoreAuthor"
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/book_detail_see_more"
+                    android:textColor="@color/colorCircleTint" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcBookInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/book_detail_similar_book" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcSimilar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

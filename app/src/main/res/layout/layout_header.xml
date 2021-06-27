@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVertical"
+    android:background="@drawable/bg_header"
+    android:elevation="@dimen/elevation_16dp">
+
+    <LinearLayout
+        android:id="@+id/headerHome"
+        style="@style/LinearLayoutHorizontal"
+        android:padding="@dimen/padding_small">
+
+        <LinearLayout
+            android:id="@+id/layoutTitleHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_logo_title" />
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/title_home"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextViewBoldWrapContent"
+            android:layout_width="wrap_content"
+            android:minLines="1"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/navigation_book_store"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layoutButton"
+            style="@style/TextViewBoldWrapContent"
+            android:layout_width="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnGotoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/layoutNotification"
+                android:padding="@dimen/padding_medium"
+                android:src="@drawable/ic_search" />
+
+            <RelativeLayout
+                android:id="@+id/layoutNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/layoutCart">
+
+                <ImageView
+                    android:id="@+id/btnNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_medium"
+                    android:src="@drawable/ic_nav_notification" />
+
+                <TextView
+                    android:id="@+id/tvNotification"
+                    android:layout_width="@dimen/corners_large"
+                    android:layout_height="@dimen/corners_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:background="@drawable/bg_circle_shopping_cart"
+                    android:gravity="center"
+                    android:textColor="@color/colorBorderSortTopSeller"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/btnShoppingCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_medium"
+                    android:src="@drawable/ic_cart" />
+
+                <TextView
+                    android:id="@+id/tvShoppingCart"
+                    android:layout_width="@dimen/corners_large"
+                    android:layout_height="@dimen/corners_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:background="@drawable/bg_circle_shopping_cart"
+                    android:gravity="center"
+                    android:textColor="@color/colorBorderSortTopSeller"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/headerChild"
+        style="@style/LinearLayoutHorizontal"
+        android:padding="@dimen/padding_small">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_medium"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTitleChild"
+            style="@style/TextViewBoldWrapContent"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/button_height_large"
+            android:layout_marginEnd="@dimen/button_height_large"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/navigation_book_store"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/layoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_toStartOf="@id/layoutEndButton"
+            android:layout_toEndOf="@id/btnBack"
+            android:background="@drawable/bg_edt_search_book"
+            android:padding="@dimen/padding_smaller"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/btnSearch"
+                style="@style/ImageViewInSearch"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/edtSearchContent"
+                style="@style/EditTextInSearch"
+                android:layout_toStartOf="@id/btnRemoveContent"
+                android:layout_toEndOf="@id/btnSearch"
+                android:hint="@string/search_place_holder"
+                android:maxLength="150" />
+
+            <ImageView
+                android:id="@+id/btnRemoveContent"
+                style="@style/ImageViewInSearch"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutEndButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/btnFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:src="@drawable/ic_filter" />
+
+            <ImageView
+                android:id="@+id/btnWishList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:src="@drawable/ic_un_wish_list"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

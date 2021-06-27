@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_medium">
+
+        <RelativeLayout
+            style="@style/LinearLayoutVertical"
+            android:padding="@dimen/padding_smaller">
+
+            <LinearLayout
+                android:id="@+id/layoutBook"
+                style="@style/LinearLayoutHorizontal"
+                android:padding="@dimen/padding_smaller">
+
+                <TextView
+                    android:layout_width="@dimen/dimen_120"
+                    android:layout_height="@dimen/dimen_150"
+                    android:background="@drawable/bg_skeleton_conner_large" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_small">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/TextViewBoldWrapContent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:id="@+id/tvShortDescription"
+                        style="@style/TextViewNormalWrapContent"
+                        android:layout_width="@dimen/dimen_150"
+                        android:layout_below="@id/tvName"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        style="@style/TextViewBoldWrapContent"
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_above="@id/btnSample"
+                        android:layout_marginTop="@dimen/margin_smaller"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                    <TextView
+                        android:id="@+id/btnSample"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:background="@drawable/bg_skeleton_conner_medium"
+                        android:padding="@dimen/padding_medium" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutBook"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv1"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="@dimen/dimen_200"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+            <LinearLayout
+                android:id="@id/layout4"
+                style="@style/LinearLayoutVertical"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv3"
+                android:layout_marginTop="@dimen/margin_large"
+                android:padding="@dimen/padding_smaller">
+
+                <TextView
+                    android:layout_width="@dimen/dimen_150"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_skeleton_conner_small"
+                    android:padding="@dimen/padding_smaller" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_smaller"
+                    android:background="@drawable/bg_skeleton_conner_small"
+                    android:padding="@dimen/padding_smaller" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                style="@style/LinearLayoutHorizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout4"
+                android:layout_marginTop="@dimen/margin_large">
+
+                <LinearLayout
+                    style="@style/LinearLayoutVertical"
+                    android:layout_width="@dimen/dimen_100"
+                    android:padding="@dimen/padding_smaller">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_smaller" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_smaller"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_smaller" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:background="@color/colorSkeleton" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutVertical"
+                    android:layout_width="@dimen/dimen_100"
+                    android:padding="@dimen/padding_smaller">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_smaller" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_smaller"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_smaller" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:background="@color/colorSkeleton" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutVertical"
+                    android:layout_width="@dimen/dimen_100"
+                    android:padding="@dimen/padding_smaller">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_smaller" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_smaller"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_smaller" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:background="@color/colorSkeleton" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutVertical"
+                    android:layout_width="@dimen/dimen_100"
+                    android:padding="@dimen/padding_smaller">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_smaller" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_smaller"
+                        android:background="@drawable/bg_skeleton_conner_small"
+                        android:padding="@dimen/padding_smaller" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSimilar"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout5"
+                android:layout_marginStart="@dimen/margin_smaller"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@drawable/bg_skeleton_conner_small"
+                android:padding="@dimen/padding_smaller" />
+
+            <LinearLayout
+                style="@style/LinearLayoutHorizontal"
+                android:layout_above="@id/layoutButton"
+                android:layout_below="@id/tvSimilar"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:padding="@dimen/padding_smaller">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="Suspicious0dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_200"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/bg_skeleton_conner_large" />
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="Suspicious0dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_200"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/bg_skeleton_conner_large" />
+
+                    <TextView
+                        style="@style/TextViewBoldWrapContent"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@drawable/bg_skeleton_conner_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutButton"
+                style="@style/LinearLayoutHorizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:padding="@dimen/margin_smaller">
+
+                <TextView
+                    android:id="@+id/btnGetItNow"
+                    style="@style/BookDetailButtonSplitWidth"
+                    android:background="@drawable/bg_skeleton_conner_medium" />
+
+                <TextView
+                    android:id="@+id/btnPurchase"
+                    style="@style/BookDetailButtonSplitWidth"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:background="@drawable/bg_skeleton_conner_medium" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

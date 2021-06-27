@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_large">
+
+        <LinearLayout
+            style="@style/LinearLayoutVertical"
+            android:layout_marginStart="@dimen/dimen_100"
+            android:layout_marginEnd="@dimen/dimen_100">
+
+            <LinearLayout
+                android:id="@+id/container"
+                style="@style/LinearLayoutVertical"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="@dimen/dimen_100"
+                    android:layout_gravity="center_horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgAvatar"
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_height="@dimen/dimen_100"
+                        android:src="@drawable/ic_logo" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/dimen_30"
+                            android:layout_height="@dimen/dimen_30"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="@dimen/margin_smaller"
+                            android:layout_marginBottom="@dimen/margin_smaller"
+                            android:src="@drawable/ic_image_avatar_border" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_image_avatar" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout style="@style/LinearLayoutVertical">
+
+                    <LinearLayout style="@style/LinearLayoutHorizontal">
+
+                        <TextView
+                            style="@style/RegisterTextView"
+                            android:layout_width="wrap_content"
+                            android:text="@string/register_text_view_first_name"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/RegisterTextView"
+                            android:text="*"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtFirstName"
+                        style="@style/AuthenticationTextInputEdtText"
+                        android:background="@drawable/bg_edt_sign_in"
+                        android:inputType="text"
+                        android:maxLength="200"
+                        android:nextFocusDown="@id/edtPhone" />
+
+                    <TextView
+                        android:id="@+id/tvErrorFirstName"
+                        style="@style/TextViewError"
+                        android:text="@string/text_required"
+                        android:visibility="gone" />
+
+                    <LinearLayout style="@style/LinearLayoutHorizontal">
+
+                        <TextView
+                            style="@style/RegisterTextView"
+                            android:layout_width="wrap_content"
+                            android:text="@string/register_text_view_last_name"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/RegisterTextView"
+                            android:text="*"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtLastName"
+                        style="@style/AuthenticationTextInputEdtText"
+                        android:background="@drawable/bg_edt_sign_in"
+                        android:inputType="text"
+                        android:maxLength="200"
+                        android:nextFocusDown="@id/edtPhone" />
+
+                    <TextView
+                        android:id="@+id/tvErrorLastName"
+                        style="@style/TextViewError"
+                        android:text="@string/text_required"
+                        android:visibility="gone" />
+
+                    <TextView
+                        style="@style/RegisterTextView"
+                        android:text="@string/register_text_view_email"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/edtEmail"
+                        style="@style/AuthenticationTextInputEdtText"
+                        android:background="@drawable/bg_edt_sign_in"
+                        android:enabled="false"
+                        android:hint="@string/forgot_email_email_place_holder"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="200" />
+
+                    <LinearLayout style="@style/LinearLayoutHorizontal">
+
+                        <TextView
+                            style="@style/RegisterTextView"
+                            android:layout_width="wrap_content"
+                            android:text="@string/register_text_view_phone"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/RegisterTextView"
+                            android:text="*"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtPhone"
+                        style="@style/AuthenticationTextInputEdtText"
+                        android:background="@drawable/bg_edt_sign_in"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:nextFocusDown="@id/edtAddress"
+                        tools:ignore="TextFields" />
+
+                    <TextView
+                        android:id="@+id/tvErrorPhone"
+                        style="@style/TextViewError"
+                        android:text="@string/text_required"
+                        android:visibility="gone" />
+
+                    <LinearLayout style="@style/LinearLayoutHorizontal">
+
+                        <TextView
+                            style="@style/RegisterTextView"
+                            android:layout_width="wrap_content"
+                            android:text="@string/register_text_view_address"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/RegisterTextView"
+                            android:text="*"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtAddress"
+                        style="@style/AuthenticationTextInputEdtText"
+                        android:background="@drawable/bg_edt_sign_in"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLength="500" />
+
+                    <TextView
+                        android:id="@+id/tvErrorAddress"
+                        style="@style/TextViewError"
+                        android:text="@string/text_required"
+                        android:visibility="gone" />
+
+                    <TextView
+                        style="@style/RegisterTextView"
+                        android:text="@string/register_text_view_gender"
+                        android:textStyle="normal" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        style="@style/LinearLayoutHorizontal"
+                        android:padding="@dimen/padding_medium">
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            style="@style/TextViewNormalWrapContent"
+                            android:checked="true"
+                            android:text="@string/gender_male"
+                            android:textColor="@color/colorTextPrimary" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            style="@style/TextViewNormalWrapContent"
+                            android:layout_marginStart="@dimen/margin_large"
+                            android:checked="false"
+                            android:text="@string/gender_female"
+                            android:textColor="@color/colorTextPrimary" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/RegisterTextView"
+                        android:text="@string/register_text_view_birth_day"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/edtBirthDay"
+                        style="@style/AuthenticationTextInputEdtText"
+                        android:background="@drawable/bg_edt_sign_in"
+                        android:drawableEnd="@drawable/ic_date_picker"
+                        android:focusable="false"
+                        android:hint="選択してください" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnChangePass"
+                style="@style/TextViewBoldWrapContent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/more_change_pass"
+                android:textColor="@color/colorTextMore" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                style="@style/AuthenticationButton"
+                android:background="@drawable/bg_button_inactive"
+                android:text="@string/more_update" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

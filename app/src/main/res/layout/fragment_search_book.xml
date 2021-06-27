@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/container"
+        style="@style/LinearLayoutVertical"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/tvResult"
+            style="@style/TextViewNormalWrapContent"
+            android:padding="@dimen/padding_medium"
+            android:textColor="@color/colorTextPrimary"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcSearchResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</layout>

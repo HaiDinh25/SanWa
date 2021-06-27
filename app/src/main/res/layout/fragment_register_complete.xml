@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        style="@style/LinearLayoutVertical"
+        android:padding="@dimen/padding_large"
+        tools:context=".business.authentication.register.views.SWRegisterCompleteFragment">
+
+        <LinearLayout style="@style/LinearLayoutVertical">
+
+            <LinearLayout
+                style="@style/LinearLayoutVertical"
+                android:layout_marginTop="@dimen/margin_largest">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_logo" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_logo_title" />
+
+                <TextView
+                    style="@style/TextViewNormalWrapContent"
+                    android:layout_gravity="center"
+                    android:text="@string/login_edit_text_slogan" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_large"
+                android:src="@drawable/ic_complete_register" />
+
+            <TextView
+                style="@style/TextViewBoldWrapContent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/register_text_view_complete_title" />
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/padding_medium"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/register_text_view_complete_content_1" />
+
+            <TextView
+                style="@style/TextViewNormalWrapContent"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/padding_medium"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/register_text_view_complete_content_2" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGotoSignIn"
+            style="@style/AuthenticationButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/bg_button_authentication"
+            android:enabled="true"
+            android:text="@string/register_button_goto_login" />
+
+    </RelativeLayout>
+
+</layout>
